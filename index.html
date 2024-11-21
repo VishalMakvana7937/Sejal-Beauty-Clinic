@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Header</title>
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Ionicons for Menu Icons -->
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+
+    <script>
+        // Tailwind custom theme colors
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        customGold: '#dabe80',
+                    }
+                }
+            }
+        }
+    </script>
+
+    <style>
+        .border-t-0-5 {
+            border-top: 0.1px solid white;
+        }
+
+        .mobile-menu-border {
+            border-bottom: 2px solid #dabe80;
+        }
+    </style>
+</head>
+
+<body class="bg-gray-100">
+    <header class="bg-[#273D32] fixed top-0 left-0 right-0 z-50">
+        <nav class="flex justify-between items-center p-2 w-[92%] mx-auto">
+            <div>
+                <img class="w-22 h-12" src="./images/web-logo.png" alt="web-logo">
+            </div>
+
+            <div class="md:flex hidden gap-6 items-center">
+                <ul class="flex space-x-10">
+                    <li><a class="text-white" href="#">Home</a></li>
+                    <li><a class="text-white" href="#">About Us</a></li>
+                    <li><a class="text-white" href="#">Services</a></li>
+                    <li><a class="text-white" href="#">Gallery</a></li>
+                    <li><a class="text-white" href="#">Franchise</a></li>
+                    <li><a class="text-white" href="#">Contact Us</a></li>
+                </ul>
+            </div>
+
+            <div class="flex items-center gap-4">
+                <button class="hidden lg:block px-5 py-2 text-white border border-customGold rounded-md">Book
+                    Appointment</button>
+                <ion-icon onclick="onToggleMenu(this)" name="menu-outline"
+                    class="text-3xl cursor-pointer md:hidden text-white"></ion-icon>
+            </div>
+        </nav>
+
+        <div class="nav-link md:hidden absolute left-0 top-30 w-full h-screen bg-[#273D32] p-4 hidden border-t-0-5">
+            <ul class="flex items-center flex-col gap-5">
+                <li class="mobile-menu-border w-44 text-center"><a class="text-white" href="#">Home</a></li>
+                <li class="mobile-menu-border w-44 text-center"><a class="text-white" href="#">About Us</a></li>
+                <li class="mobile-menu-border w-44 text-center"><a class="text-white" href="#">Services</a></li>
+                <li class="mobile-menu-border w-44 text-center"><a class="text-white" href="#">Gallery</a></li>
+                <li class="mobile-menu-border w-44 text-center"><a class="text-white" href="#">Franchise</a></li>
+                <li class="mobile-menu-border w-44 text-center"><a class="text-white" href="#">Contact Us</a></li>
+            </ul>
+        </div>
+    </header>
+
+
+    <main class="pt-24">
+
+    </main>
+
+    <script>
+        const navlink = document.querySelector('.nav-link');
+
+        function onToggleMenu(e) {
+            e.name = e.name === 'menu' ? 'close' : 'menu';
+            navlink.classList.toggle('hidden');
+        }
+    </script>
+</body>
+
+</html>
