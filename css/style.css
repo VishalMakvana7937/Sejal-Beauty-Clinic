@@ -1,0 +1,14 @@
+.border-t-0-5 {
+    border-top: 0.1px solid white;
+}
+
+.mobile-menu-border {
+    border-bottom: 2px solid #dabe80;
+}
+
+.appointment-booking-bg-img {
+    background-image: url('../images/contat-img.png');
+    background-position: left center !important;
+}
+
+

@@ -5,8 +5,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Responsive Header</title>
+    <!-- Style css -->
+    <link rel="stylesheet" href="./css/style.css">
+
     <!-- Tailwind CSS -->
     <script src="https://cdn.tailwindcss.com"></script>
+
     <!-- Ionicons for Menu Icons -->
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
@@ -23,26 +27,16 @@
             }
         }
     </script>
-
-    <style>
-        .border-t-0-5 {
-            border-top: 0.1px solid white;
-        }
-
-        .mobile-menu-border {
-            border-bottom: 2px solid #dabe80;
-        }
-    </style>
 </head>
 
 <body class="bg-gray-100">
+    <!-- HEADER SECTION -->
     <header class="bg-[#273D32] fixed top-0 left-0 right-0 z-50">
         <nav class="flex justify-between items-center p-2 w-[92%] mx-auto">
             <div>
                 <img class="w-22 h-12" src="./images/web-logo.png" alt="web-logo">
             </div>
-
-            <div class="md:flex hidden gap-6 items-center">
+            <div class="lg:flex hidden gap-6 items-center">
                 <ul class="flex space-x-10">
                     <li><a class="text-white" href="#">Home</a></li>
                     <li><a class="text-white" href="#">About Us</a></li>
@@ -52,16 +46,15 @@
                     <li><a class="text-white" href="#">Contact Us</a></li>
                 </ul>
             </div>
-
             <div class="flex items-center gap-4">
-                <button class="hidden lg:block px-5 py-2 text-white border border-customGold rounded-md">Book
-                    Appointment</button>
+                <button
+                    class="hidden md:block px-5 py-2 text-white border border-customGold rounded-md flex items-center">Book
+                    Appointment <ion-icon name="arrow-forward-circle-outline"></ion-icon></button>
                 <ion-icon onclick="onToggleMenu(this)" name="menu-outline"
-                    class="text-3xl cursor-pointer md:hidden text-white"></ion-icon>
+                    class="text-3xl cursor-pointer lg:hidden text-white"></ion-icon>
             </div>
         </nav>
-
-        <div class="nav-link md:hidden absolute left-0 top-30 w-full h-screen bg-[#273D32] p-4 hidden border-t-0-5">
+        <div class="nav-link lg:hidden absolute left-0 top-30 w-full h-screen bg-[#273D32] p-4 hidden border-t-0-5">
             <ul class="flex items-center flex-col gap-5">
                 <li class="mobile-menu-border w-44 text-center"><a class="text-white" href="#">Home</a></li>
                 <li class="mobile-menu-border w-44 text-center"><a class="text-white" href="#">About Us</a></li>
@@ -73,8 +66,61 @@
         </div>
     </header>
 
-
     <main class="pt-24">
+        <section class="relative">
+            <!-- Background image section -->
+            <div class="appointment-booking-bg-img bg-cover bg-center bg-no-repeat relative"">
+                <div class=" absolute inset-0 bg-black opacity-50"></div>
+
+            <!-- Form Container -->
+            <div
+                class="flex w-[90%] pt-6 pb-6 md:p-12 lg:p-18 mx-auto relative z-10 flex sm:justify-center lg:justify-start">
+                <div class="bg-white w-full max-w-xl border rounded-md py-14 px-7">
+                    <h2 class="text-3xl text-center font-semibold">
+                        Book An
+                        <span class="text-customGold px-2">Appointment</span>
+                    </h2>
+                    <form action="#" class="mt-6">
+                        <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                            <div class="form-group w-full">
+                                <input type="text" id="name" name="name" placeholder="Name *"
+                                    class="w-full p-2 border rounded bg-[#F4EFE1CC] border-none" required>
+                            </div>
+                            <div class="form-group w-full">
+                                <input type="tel" id="phone" name="phone" placeholder="Phone *"
+                                    class="w-full p-2 border rounded bg-[#F4EFE1CC] border-none" required>
+                            </div>
+                        </div>
+                        <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 mt-4">
+                            <div class="form-group w-full">
+                                <input type="text" id="date" name="date" placeholder="Date *"
+                                    class="w-full p-2 border rounded bg-[#F4EFE1CC] border-none" required>
+                            </div>
+                            <div class="form-group w-full">
+                                <input type="tel" id="time" name="time" placeholder="Time *"
+                                    class="w-full p-2 border rounded bg-[#F4EFE1CC] border-none" required>
+                            </div>
+                        </div>
+                        <div class="form-group w-full mt-4">
+                            <input type="tel" id="service" name="service" placeholder="Service Required *"
+                                class="w-full p-2 border rounded bg-[#F4EFE1CC] border-none" required>
+                        </div>
+                        <div class="flex justify-center mt-6">
+                            <button
+                                class="px-5 py-2 text-white border border-customGold rounded-md bg-[#273D32] hover:bg-customGold hover:text-[#273D32] transition duration-300">
+                                Book Appointment
+                                <ion-icon name="arrow-forward-circle-outline" class="ml-2"></ion-icon>
+                            </button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <div class="absolute bottom-0 right-0 z-0 hidden xl:block">
+                <img src="./images/contat-img-1.png" alt="contact-img-1" class="max-w-[30%] h-auto" />
+            </div>
+            </div>
+        </section>
+
 
     </main>
 
