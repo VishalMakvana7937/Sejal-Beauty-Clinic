@@ -15,6 +15,11 @@
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
 
+    <!-- Quicksand Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
+
     <script>
         // Tailwind custom theme colors
         tailwind.config = {
@@ -32,12 +37,12 @@
 <body class="bg-gray-100">
     <!-- HEADER SECTION -->
     <header class="bg-[#273D32] fixed top-0 left-0 right-0 z-50">
-        <nav class="flex justify-between items-center p-2 w-[92%] mx-auto">
+        <nav class="flex justify-between items-center p-2 w-[90%] mx-auto">
             <div>
                 <img class="w-22 h-12" src="./images/web-logo.png" alt="web-logo">
             </div>
             <div class="lg:flex hidden gap-6 items-center">
-                <ul class="flex space-x-10">
+                <ul class="flex space-x-8">
                     <li><a class="text-white" href="#">Home</a></li>
                     <li><a class="text-white" href="#">About Us</a></li>
                     <li><a class="text-white" href="#">Services</a></li>
@@ -66,10 +71,48 @@
         </div>
     </header>
 
-    <main class="pt-24">
-        <section class="py-12 relative">
+    <main class="">
+
+        <section class="pt-24 pb-8 bg-[#273D32]">
+            <div class="flex flex-col md:flex-row w-[90%] mx-auto">
+
+                <div class="md:w-1/3 flex justify-start items-center">
+                    <img src="./images/fasion-img-3.png" alt="Placeholder Image"
+                        class="w-full max-w-[502px] md:w-3/4 max-h-[701px] h-auto rounded-br-[75px] rounded-tr-[75px] rounded-bl-[75px] transform transition-all">
+                </div>
+
+                <div class="md:w-2/3 flex items-center justify-center md:justify-start relative">
+                    <div class="text-black text-center md:text-left px-4 z-10 w-[100%] xl:w-[72%]">
+                        <h3 class="text-customGold flex mt-3">Your Miracle Care For Perfct Skin <div
+                                class="h-px w-10 bg-customGold mt-4 ml-2"></div>
+                        </h3>
+                        <h2 class="text-3xl text-start font-semibold text-white mt-4">
+                            Make Your Look Even
+                            More <span class="text-customGold">Perfect</span> With Our
+                            Treatments
+                        </h2>
+                        <p
+                            class="mt-1 text-sm sm:text-base md:text-sm lg:text-sm xl:text-lg text-[#E0E0E0] text-start mt-4">
+                            There are many variations of passages of Lorem Ipsum available, but we the majority have
+                            suffered alteration in some form, when an took a galley of type and scrambled it to make
+                            a type specimen book. which don't look even slightly believable.
+                        </p>
+                        <div class="flex items-center gap-4 mt-8">
+                            <button
+                                class="hidden md:block px-5 py-2 text-white border border-customGold rounded-md flex items-center">Book
+                                Appointment <ion-icon name="arrow-forward-circle-outline"></ion-icon></button>
+                        </div>
+                        <!-- <div class="absolute button-0 left-[53%]">
+                            <img class="w-full max-w-[387px] md:w-3/4 max-h-[324px] h-auto " src="./images/fasion-img-4.png" alt=" fasion-img-4">
+                        </div> -->
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="pb-24 pt-12 relative">
             <!-- Container for flex layout -->
-            <div class="flex flex-col md:flex-row w-[90%] mx-auto gap-6">
+            <div class="flex flex-col flex-col-reverse md:flex-row w-[90%] mx-auto gap-6">
 
                 <!-- Left Column - Text Block -->
                 <div class="w-full md:w-1/2 flex items-center justify-center md:justify-start relative">
@@ -109,7 +152,7 @@
                             of type and scrambled it to make a type specimen book.
                         </p>
 
-                        <div class="mt-6">
+                        <div class="mt-6 text-start">
                             <button
                                 class="px-5 py-2 text-white border border-customGold rounded-md bg-[#273D32] hover:bg-customGold hover:text-[#273D32] transition duration-300">
                                 Read More
@@ -120,24 +163,55 @@
                 </div>
 
                 <!-- Right Column - Image Block -->
-                <div class="w-full md:w-1/2 flex items-center justify-start z-20 relative">
+                <div class="w-full md:w-1/2 flex items-center justify-start z-20">
                     <img src="./images/fasion-img-1.png" alt="Fashion Image"
-                        class="w-full max-w-[727px] max-h-[698px] h-auto object-cover object-top rounded-br-[354px] transform transition-all duration-300">
+                        class="w-full max-w-[727px] max-h-[698px] h-auto object-cover object-top rounded-br-[145px] transform transition-all duration-300">
                 </div>
 
                 <!-- Decorative Background Block -->
-                <div class="bg-[#DABE8080] absolute top-0 right-0 rounded-bl-[354px] z-0 
-                    w-[95%] sm:w-[95%] md:w-[40%] lg:w-[32%] xl:w-[32%] 2xl:w-[35%] 
-                    h-[92%] sm:h-[85%] md:h-[80%] lg:h-[88%] xl:h-[92%] 2xl:h-[95%]">
+                <div class="bg-[#DABE8080] absolute top-0 right-0 rounded-bl-[254px] z-0 
+                    w-[89%] sm:w-[95%] md:w-[40%] lg:w-[32%] xl:w-[32%] 2xl:w-[45%] 
+                    h-[45%] sm:h-[65%] md:h-[80%] lg:h-[88%] xl:h-[92%] 2xl:h-[95%]">
+                </div>
+            </div>
+        </section>
+
+        <section class="py-14 bg-[#E9DCBD] mb-12 relative h-auto">
+            <div class="flex flex-col flex-col-reverse md:flex-row w-[90%] mx-auto gap-6">
+                <div class="w-full md:w-3/6 flex items-center justify-center md:justify-start">
+                    <img class="rounded w-full h-auto" src="./images/fasion-img-5.png" alt="fasion-img-5">
+                </div>
+
+                <div
+                    class="w-full md:w-3/6 flex items-center justify-center md:justify-start bg-[#273D32] rounded-tr-[105px] transform transition-all">
+                    <div class="p-3">
+                        <h2 class="text-1xl text-center font-semibold text-white">
+                            Giving You Equal <br> Opportunities In Our Business
+                        </h2>
+                        <p
+                            class="mt-4 text-sm sm:text-base md:text-sm lg:text-sm xl:text-sm text-[#E0E0E0] text-center">
+                            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has
+                            been the
+                            industry's standard dummy text ever since the 1500s, when an unknown printer took a galley
+                            of type and scrambled it to make a type specimen book.
+                        </p>
+                        <div class="flex justify-center mt-6">
+                            <button
+                                class="px-5 py-2 text-[#2B2B2B] border border-customGold rounded-md bg-[#E9DCBD] hover:bg-customGold hover:text-[#273D32] transition duration-300">
+                                Book Appointment
+                                <ion-icon name="arrow-forward-circle-outline" class="ml-2"></ion-icon>
+                            </button>
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>
 
         <section class="relative">
-            <div class="appointment-booking-bg-img bg-cover bg-center bg-no-repeat relative"">
+            <div class="appointment-booking-bg-img bg-cover bg-center bg-no-repeat relative object-cover object-top"">
                 <div class=" absolute inset-0 bg-black opacity-50"></div>
             <div
-                class="flex w-[90%] pt-6 pb-6 md:p-12 lg:p-18 mx-auto relative z-10 flex sm:justify-center lg:justify-start">
+                class="flex w-[88%] pt-6 pb-6 md:p-12 lg:p-18 mx-auto relative z-10 flex sm:justify-center lg:justify-start">
                 <div class="bg-white w-full max-w-xl border rounded-md py-14 px-7">
                     <h2 class="text-3xl text-center font-semibold">
                         Book An
@@ -178,12 +252,16 @@
                     </form>
                 </div>
             </div>
-            <div class="absolute bottom-0 right-0 z-0 hidden xl:block">
-                <img src="./images/contat-img-1.png" alt="contact-img-1" class="max-w-[30%] h-auto" />
-            </div>
+            <!-- <div class="absolute bottom-0 right-[-15%] z-0 hidden xl:block">
+                <img src="./images/contat-img-1.png" alt="contact-img-1" class="max-w-[40%] h-auto" />
+            </div> -->
         </section>
 
     </main>
+
+    <footer>
+        123
+    </footer>
 
     <script>
         const navlink = document.querySelector('.nav-link');
