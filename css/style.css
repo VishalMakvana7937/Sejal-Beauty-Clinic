@@ -16,6 +16,14 @@ body {
     font-optical-sizing: auto;
     font-weight: <weight>;
     font-style: normal;
-  }
-  
+}
 
+.fi-icon{
+    background-color: #2B292980;
+}
+
+.fixed-in-icon{
+    background: linear-gradient(45deg, #FAE100, #FCB720, #FF7950, #FF1C74, #6C1CD1);
+    background-size: 300% 300%;
+    animation: gradientAnimation 5s ease infinite
+}

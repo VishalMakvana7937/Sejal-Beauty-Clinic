@@ -70,6 +70,18 @@
             </ul>
         </div>
     </header>
+    <div class="fixed bottom-[2%] right-[1%] z-50 flex flex-col items-center gap-2 mt-4 mr-2 fade-in">
+        <div class="fi-icon p-2 xl:p-3 rounded-full shadow-lg z-0 flex items-center justify-center">
+            <ion-icon name="logo-facebook" class="text-2xl p-2 rounded-full text-[#3B5998] bg-[#DABE80]"></ion-icon>
+        </div>
+        <div class="fi-icon p-2 xl:p-3 rounded-full shadow-lg z-0 flex items-center justify-center">
+            <ion-icon name="logo-instagram" class="fixed-in-icon text-2xl p-2 rounded-full bg-[#DABE80]"></ion-icon>
+        </div>
+    </div>
+
+
+
+
 
     <main class="">
 
@@ -82,7 +94,7 @@
                 </div>
 
                 <div class="md:w-2/3 flex items-center justify-center md:justify-start relative">
-                    <div class="text-black text-center md:text-left px-4 z-10 w-[100%] xl:w-[72%]">
+                    <div class="text-black text-center md:text-left z-10 w-[100%] xl:w-[72%]">
                         <h3 class="text-customGold flex mt-3">Your Miracle Care For Perfct Skin <div
                                 class="h-px w-10 bg-customGold mt-4 ml-2"></div>
                         </h3>
@@ -120,7 +132,7 @@
                         class="absolute bottom-[92%] right-[10%] sm:bottom-[60%] sm:right-[50%] md:bottom-[50%] md:right-[48%] lg:bottom-[40%] lg:right-[45%] h-20 w-20 z-20 rotate-90">
                         <img src="./images/fasion-img-2.png" alt="fasion-img-2">
                     </div> -->
-                    <div class="text-black text-center md:text-left px-4 z-10 w-[100%] xl:w-[89%]">
+                    <div class="text-black text-center md:text-left z-10 w-[100%] xl:w-[89%]">
                         <h3 class="text-customGold flex">About US <div class="h-px w-10 bg-customGold mt-4 ml-2"></div>
                         </h3>
                         <h2 class="text-3xl text-start font-semibold">
@@ -189,7 +201,7 @@
                             Giving You Equal <br> Opportunities In Our Business
                         </h2>
                         <p
-                            class="mt-4 text-sm sm:text-base md:text-sm lg:text-sm xl:text-sm text-[#E0E0E0] text-center">
+                            class="mt-4 text-sm sm:text-base md:text-sm lg:text-sm xl:text-lg text-[#E0E0E0] text-center">
                             Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has
                             been the
                             industry's standard dummy text ever since the 1500s, when an unknown printer took a galley
@@ -259,65 +271,100 @@
 
     </main>
 
-    <footer class="bg-[#E4CB93] py-12">
-        <div class="flex flex-col flex-col-reverse md:flex-row w-[90%] mx-auto gap-6">
+    <footer class="bg-[#E4CB93] pt-12">
+        <div class="flex flex-col md:flex-row w-[90%] mx-auto gap-6">
+            <!-- Left Section (Social Media + Image) -->
             <div class="w-full md:w-3/6">
-
-                <div class="flex items-center justify-center md:justify-start">
-                    <div class="w-full md:w-3/6 md:justify-start">
-                        <h2 class="font-bold">Social Media</h2>
-                        <ul class="flex items-center justify-center md:justify-start gap-2 text-lg mt-4">
-                            <li><a class="text-[#374B41]" href="#"><ion-icon name="logo-linkedin"></ion-icon></li>
-                            <li><a class="text-[#374B41]" href="#"><ion-icon name="logo-instagram"></ion-icon></a></li>
-                            <li><a class="text-[#374B41]" href="#"><ion-icon name="logo-twitter"></ion-icon></li>
+                <div class="flex items-center md:items-start md:flex-row gap-6">
+                    <!-- Social Media Links -->
+                    <div class="w-full md:w-1/2">
+                        <h2 class="font-bold text-lg">Social Media</h2>
+                        <ul class="flex gap-4 mt-4 text-lg md:justify-start">
+                            <li><a href="#" class="text-[#374B41]"><ion-icon name="logo-linkedin"></ion-icon></a></li>
+                            <li><a href="#" class="text-[#374B41]"><ion-icon name="logo-instagram"></ion-icon></a></li>
+                            <li><a href="#" class="text-[#374B41]"><ion-icon name="logo-twitter"></ion-icon></a></li>
                         </ul>
                     </div>
-                    <div class="w-full md:w-3/6 flex items-center justify-center md:justify-start">
-                        <img class="w-full max-w-[145px] max-h-[209px] h-auto" src="./images/fasion-img-6.png"
+
+                    <!-- Image -->
+                    <div class="w-full md:w-3/6 flex items-center justify-start md:justify-start">
+                        <img class="w-full max-w-[65px] max-h-[129  px] h-auto" src="./images/fasion-img-6.png"
                             alt="fasion-img-6">
                     </div>
                 </div>
-                <div class="flex items-center justify-center md:justify-start mt-4">
-                    <div class="w-full md:justify-start">
-                        <h2 class="font-bold text-xl flex items-center">
-                            Social Media :
-                        </h2>
-                        <ul class="items-center justify-start gap-2 text-lg ml-1">
-                            <li><a class="text-[#374B41] text-sm" href="#">Home page</a></li>
 
-                            <li><a class="text-[#374B41] text-sm" href="#">Services</a></li>
+                <!-- Footer Links -->
+                <div class="mt-6 md:mt-3">
+                    <div class="flex md:flex-row gap-6">
+                        <div class="w-full md:w-1/2">
+                            <h2 class="font-bold text-xl">Quick Links</h2>
+                            <ul class="space-y-2 text-lg ml-1">
+                                <li><a href="#" class="text-[#374B41] text-sm">Home page</a></li>
+                                <li><a href="#" class="text-[#374B41] text-sm">Services</a></li>
+                                <li><a href="#" class="text-[#374B41] text-sm">About Us</a></li>
+                                <li><a href="#" class="text-[#374B41] text-sm">Franchise</a></li>
+                                <li><a href="#" class="text-[#374B41] text-sm">Contact Us</a></li>
+                            </ul>
+                        </div>
 
-                            <li><a class="text-[#374B41] text-sm" href="#">About Us</a></li>
-
-                            <li><a class="text-[#374B41] text-sm" href="#">Franchise</a></li>
-
-                            <li><a class="text-[#374B41] text-sm" href="#">Contact Us</a></li>
-                        </ul>
-                    </div>
-                    <div class="w-full md:justify-start">
-                        <h2 class="font-bold text-xl flex items-center">
-                            Social Media :
-                        </h2>
-                        <ul class="items-center justify-start gap-2 text-lg ml-1">
-                            <li><a class="text-[#374B41] text-sm" href="#">Home page</a></li>
-
-                            <li><a class="text-[#374B41] text-sm" href="#">Services</a></li>
-
-                            <li><a class="text-[#374B41] text-sm" href="#">About Us</a></li>
-
-                            <li><a class="text-[#374B41] text-sm" href="#">Franchise</a></li>
-
-                            <li><a class="text-[#374B41] text-sm" href="#">Contact Us</a></li>
-                        </ul>
+                        <!-- Duplicate Quick Links -->
+                        <div class="w-full md:w-1/2">
+                            <h2 class="font-bold text-xl">Gallery</h2>
+                            <ul class="text-lg ml-1">
+                                <li><a href="#" class="text-[#374B41] text-sm">Engagement</a></li>
+                                <li><a href="#" class="text-[#374B41] text-sm">Wedding</a></li>
+                                <li><a href="#" class="text-[#374B41] text-sm">Sangit</a></li>
+                                <li><a href="#" class="text-[#374B41] text-sm">Open - Hairstyle</a></li>
+                                <li><a href="#" class="text-[#374B41] text-sm">Braids</a></li>
+                                <li><a href="#" class="text-[#374B41] text-sm">Jewellery</a></li>
+                            </ul>
+                        </div>
                     </div>
                 </div>
             </div>
 
-            <div class="w-full md:w-3/6 flex items-center justify-center md:justify-start">
-                123
+            <!-- Right Section (Subscription Form) -->
+            <div class="w-full md:w-3/6">
+                <div class="w-auto">
+                    <h2 class="text-lg font-bold mb-4">We Don’t Keep Our Beauty Secrets</h2>
+                    <form action="#" method="POST" class="w-full">
+                        <div class="flex  sm:flex-row sm:items-center gap-4">
+                            <!-- Service Input -->
+                            <div class="w-full sm:w-[70%]">
+                                <input type="tel" id="service" name="service" placeholder="Service Required *"
+                                    class="w-full p-3 border rounded bg-[#FFFFFF] border-none focus:outline-none focus:ring-2 focus:ring-customGold"
+                                    required>
+                            </div>
+                            <!-- Subscribe Button -->
+                            <div class="sm:w-[30%] flex justify-center sm:justify-start">
+                                <button type="submit"
+                                    class="w-full sm:w-auto px-5 py-2 text-white border border-customGold rounded-md bg-[#273D32] hover:bg-customGold hover:text-[#273D32] transition duration-300">
+                                    Subscribe
+                                </button>
+                            </div>
+                        </div>
+                    </form>
+                    <p class="mt-4 text-sm  text-[#2B2B2B] text-start w-full xl:w-[75%]">
+                        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has
+                        been the
+                        industry's standard dummy text ever since the 1500s, when an unknown printer took a galley
+                        of type and scrambled it to make a type specimen book.
+                    </p>
+                </div>
             </div>
+
         </div>
+        <div class="border-t border-black mt-4 text-center w-full">
+
+        </div>
+        <div class="flex flex-col md:flex-row w-[90%] mx-auto gap-6 pb-4    ">
+            <p class="mt-4 text-sm  text-[#2B2B2B] w-full    text-center">
+                © Copyright 2023 | Sejal’s Beauty Clinic & Academy| All right reserved.
+            </p>
+        </div>
+
     </footer>
+
 
     <script>
         const navlink = document.querySelector('.nav-link');
