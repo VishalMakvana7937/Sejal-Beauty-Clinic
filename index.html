@@ -37,14 +37,14 @@
 <body class="bg-gray-100">
     <!-- HEADER SECTION -->
     <header class="bg-[#273D32] fixed top-0 left-0 right-0 z-50">
-        <nav class="flex justify-between items-center p-2 w-[90%] mx-auto">
+        <nav class="flex justify-between items-center p-2 w-[90%] mx-auto relative">
             <div>
                 <img class="w-22 h-12" src="./images/web-logo.png" alt="web-logo">
             </div>
             <div class="lg:flex hidden gap-6 items-center">
                 <ul class="flex space-x-8">
-                    <li><a class="text-white" href="#">Home</a></li>
-                    <li><a class="text-white" href="#">About Us</a></li>
+                    <li><a class="text-white" href="./index.html">Home</a></li>
+                    <li><a class="text-white" href="./pages/AboutUs.html">About Us</a></li>
                     <li><a class="text-white" href="#">Services</a></li>
                     <li><a class="text-white" href="#">Gallery</a></li>
                     <li><a class="text-white" href="#">Franchise</a></li>
@@ -61,8 +61,8 @@
         </nav>
         <div class="nav-link lg:hidden absolute left-0 top-30 w-full h-screen bg-[#273D32] p-4 hidden border-t-0-5">
             <ul class="flex items-center flex-col gap-5">
-                <li class="mobile-menu-border w-44 text-center"><a class="text-white" href="#">Home</a></li>
-                <li class="mobile-menu-border w-44 text-center"><a class="text-white" href="#">About Us</a></li>
+                <li class="mobile-menu-border w-44 text-center"><a class="text-white" href="./index.html">Home</a></li>
+                <li class="mobile-menu-border w-44 text-center"><a class="text-white" href="./pages/AboutUs.html">About Us</a></li>
                 <li class="mobile-menu-border w-44 text-center"><a class="text-white" href="#">Services</a></li>
                 <li class="mobile-menu-border w-44 text-center"><a class="text-white" href="#">Gallery</a></li>
                 <li class="mobile-menu-border w-44 text-center"><a class="text-white" href="#">Franchise</a></li>
@@ -70,6 +70,7 @@
             </ul>
         </div>
     </header>
+
     <div class="fixed bottom-[2%] right-[1%] z-50 flex flex-col items-center gap-2 mt-4 mr-2 fade-in hidden lg:block">
         <div class="fi-icon p-2 xl:p-3 rounded-full shadow-lg z-0 flex items-center justify-center mb-2">
             <ion-icon name="logo-facebook" class="text-2xl p-2 rounded-full text-[#3B5998] bg-[#DABE80]"></ion-icon>
@@ -78,10 +79,6 @@
             <ion-icon name="logo-instagram" class="fixed-in-icon text-2xl p-2 rounded-full bg-[#DABE80]"></ion-icon>
         </div>
     </div>
-
-
-
-
 
     <main class="">
 
@@ -364,7 +361,6 @@
         </div>
 
     </footer>
-
 
     <script>
         const navlink = document.querySelector('.nav-link');
