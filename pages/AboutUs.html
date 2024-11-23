@@ -20,6 +20,9 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
 
+    <!-- Animate.css -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+
     <script>
         // Tailwind custom theme colors
         tailwind.config = {
@@ -38,8 +41,8 @@
     <div id="loadingScreen"
         class="loading-screen fixed top-0 left-0 right-0 bottom-0 bg-[#273D32] flex justify-center items-center z-50">
         <div class="flex flex-col items-center justify-center">
-            <img src="../images/web-logo.png" alt="web-logo">
-            <div class="text-white text-2xl font-semibold">Loading...</div>
+            <img src="../images/web-logo.png" alt="web-logo" class="animate__animated animate__fadeIn">
+            <div class="text-white text-2xl font-semibold animate__animated animate__fadeIn animate__delay-1s">Loading...</div>
         </div>
     </div>
     <!-- HEADER SECTION -->
@@ -387,12 +390,19 @@
     </footer>
 
     <script>
-        const navlink = document.querySelector('.nav-link');
+        function onToggleMenu(icon) {
+            const menu = document.querySelector('.nav-link');
+            const isVisible = !menu.classList.contains('hidden'); // Check if it's already visible
 
-        function onToggleMenu(e) {
-            e.name = e.name === 'menu' ? 'close' : 'menu';
-            navlink.classList.toggle('hidden');
+            if (isVisible) {
+                menu.classList.add('hidden');  // Hide the menu
+                icon.name = 'menu-outline';    // Change the icon to "menu"
+            } else {
+                menu.classList.remove('hidden');  // Show the menu
+                icon.name = 'close-outline';       // Change the icon to "close"
+            }
         }
+
         window.onload = function () {
             setTimeout(function () {
                 const loadingScreen = document.getElementById('loadingScreen');
