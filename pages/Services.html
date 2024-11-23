@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Header</title>
+    <!-- Style css -->
+    <link rel="stylesheet" href="../css/style.css">
+
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Ionicons for Menu Icons -->
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+
+    <!-- Quicksand Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
+
+    <script>
+        // Tailwind custom theme colors
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        customGold: '#dabe80',
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+
+<body class="bg-gray-100">
+    <div id="loadingScreen"
+        class="loading-screen fixed top-0 left-0 right-0 bottom-0 bg-[#273D32] flex justify-center items-center z-50">
+        <div class="flex flex-col items-center justify-center">
+            <img src="../images/web-logo.png" alt="web-logo">
+            <div class="text-white text-2xl font-semibold">Loading...</div>
+        </div>
+    </div>
+    <!-- HEADER SECTION -->
+    <header class="bg-[#273D32] fixed top-0 left-0 right-0 z-40">
+        <nav class="flex justify-between items-center py-2 w-[90%] lg:w-[90%] mx-auto relative">
+            <div>
+                <img class="w-22 h-12" src="../images/web-logo.png" alt="web-logo">
+            </div>
+            <div class="lg:flex hidden gap-6 items-center">
+                <ul class="flex space-x-8">
+                    <li><a class="text-white" href="../index.html">Home</a></li>
+                    <li><a class="text-white" href="../pages/AboutUs.html">About Us</a></li>
+                    <li><a class="text-customGold" href="../pages/Services.html">Services</a></li>
+                    <li><a class="text-white" href="#">Gallery</a></li>
+                    <li><a class="text-white" href="#">Franchise</a></li>
+                    <li><a class="text-white" href="#">Contact Us</a></li>
+                </ul>
+            </div>
+            <div class="flex items-center gap-4">
+                <button
+                    class="hidden md:block px-5 py-2 text-white border border-customGold rounded-md flex items-center">Book
+                    Appointment <ion-icon name="arrow-forward-circle-outline"></ion-icon></button>
+                <ion-icon onclick="onToggleMenu(this)" name="menu-outline"
+                    class="text-3xl cursor-pointer lg:hidden text-white"></ion-icon>
+            </div>
+        </nav>
+        <div class="nav-link lg:hidden absolute left-0 top-30 w-full h-screen bg-[#273D32] p-4 hidden border-t-0-5">
+            <ul class="flex items-center flex-col gap-5">
+                <li class="mobile-menu-border w-44 text-center"><a class="text-white" href="../index.html">Home</a></li>
+                <li class="mobile-menu-border w-44 text-center"><a class="text-white" href="../pages/AboutUs.html">About
+                        Us</a></li>
+                <li class="mobile-menu-border w-44 text-center"><a class="text-white" href="./Services.html">Services</a></li>
+                <li class="mobile-menu-border w-44 text-center"><a class="text-white" href="#">Gallery</a></li>
+                <li class="mobile-menu-border w-44 text-center"><a class="text-white" href="#">Franchise</a></li>
+                <li class="mobile-menu-border w-44 text-center"><a class="text-white" href="#">Contact Us</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <main class="">
+        <section class="pt-24 pb-8 bg-[#273D32] relative">
+            <div class="flex flex-col md:flex-row w-[90%] lg:w-[80%] mx-auto py-20">
+                <div class="text-center w-full">
+                    <h1 class="text-white text-5xl">Services</h1>
+                    <div class="w-full flex justify-center mt-4">
+                        <div class="h-px w-40 bg-customGold"></div>
+                    </div>
+                </div>
+            </div>
+            <!-- <div class="absolute top-[50%] left-0">
+                <img class="w-full max-w-[269px] md:w-3/4 max-h-[456px] h-auto" style="transform: rotate(75deg);"
+                    src="../images/tree-1.png" alt="tree-1">
+            </div>
+            <div class="absolute top-[0%] left-[70%]">
+                <img class="w-full max-w-[429px] md:w-3/4 max-h-[499px] h-auto" src="../images/fasion-girl.png"
+                    alt="fasion-girl">
+            </div> -->
+        </section>
+
+        <section class="mt-16 mb-16">
+            <h2 class="text-4xl text-center font-semibold mb-6">
+                What
+                <span class="text-customGold">We Do.....</span>
+            </h2>
+            <div class="flex flex-col md:flex-row w-[90%] lg:w-[80%] mx-auto">
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+
+                    <div class="flex flex-col items-center bg-white shadow-lg rounded-lg">
+                        <img class="w-full max-h-[500px]" src="../images/beauty-img-3.png" alt="beauty-img-3">
+                        <div class="p-6">
+                            <h2 class="text-2xl">GreenBeauty</h2>
+                            <p class="mt-1 text-sm text-[#717171]">
+                                There are many variations of passages of Lorem Ipsum available, but we the majority have
+                                suffered alteration in some form, when an took a galley of type and scrambled it to make
+                                a type specimen book. which don't look even slightly believable.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="flex flex-col items-center bg-white shadow-lg rounded-lg">
+                        <img class="w-full max-h-[367.13px]" src="../images/beauty-img-4.png" alt="beauty-img-4">
+                        <div class="p-6">
+                            <h2 class="text-2xl">GreenBeauty</h2>
+                            <p class="mt-1 text-sm text-[#717171]">
+                                There are many variations of passages of Lorem Ipsum available, but we the majority have
+                                suffered alteration in some form, when an took a galley of type and scrambled it to make
+                                a type specimen book. which don't look even slightly believable.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="flex flex-col items-center bg-white shadow-lg rounded-lg">
+                        <img class="w-full max-h-[367.13px]" src="../images/beauty-img-5.png" alt="beauty-img-5">
+                        <div class="p-6">
+                            <h2 class="text-2xl">GreenBeauty</h2>
+                            <p class="mt-1 text-sm text-[#717171]">
+                                There are many variations of passages of Lorem Ipsum available, but we the majority have
+                                suffered alteration in some form, when an took a galley of type and scrambled it to make
+                                a type specimen book. which don't look even slightly believable.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="flex flex-col items-center bg-white shadow-lg rounded-lg">
+                        <img class="w-full max-h-[367.13px]" src="../images/beauty-img-6.png" alt="beauty-img-6">
+                        <div class="p-6">
+                            <h2 class="text-2xl">GreenBeauty</h2>
+                            <p class="mt-1 text-sm text-[#717171]">
+                                There are many variations of passages of Lorem Ipsum available, but we the majority have
+                                suffered alteration in some form, when an took a galley of type and scrambled it to make
+                                a type specimen book. which don't look even slightly believable.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="flex flex-col items-center bg-white shadow-lg rounded-lg">
+                        <img class="w-full max-h-[367.13px]" src="../images/beauty-img-7.png" alt="beauty-img-7">
+                        <div class="p-6">
+                            <h2 class="text-2xl">GreenBeauty</h2>
+                            <p class="mt-1 text-sm text-[#717171]">
+                                There are many variations of passages of Lorem Ipsum available, but we the majority have
+                                suffered alteration in some form, when an took a galley of type and scrambled it to make
+                                a type specimen book. which don't look even slightly believable.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="flex flex-col items-center bg-white shadow-lg rounded-lg">
+                        <img class="w-full max-h-[367.13px]" src="../images/beauty-img-8.png" alt="beauty-img-8">
+                        <div class="p-6">
+                            <h2 class="text-2xl">GreenBeauty</h2>
+                            <p class="mt-1 text-sm text-[#717171]">
+                                There are many variations of passages of Lorem Ipsum available, but we the majority have
+                                suffered alteration in some form, when an took a galley of type and scrambled it to make
+                                a type specimen book. which don't look even slightly believable.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- <div class="absolute bottom-0 right-0">
+                <img class="w-full max-w-[269px] md:w-3/4 max-h-[456px] h-auto"
+                    src="../images/contat-img-1.png" alt="contat-img-1">
+            </div> -->
+        </section>
+
+        <section class="relative mb-16">
+            <div class="appointment-booking-bg-img bg-cover bg-center bg-no-repeat relative object-cover object-top"">
+                <div class=" absolute inset-0 bg-black opacity-50"></div>
+            <div
+                class="flex w-[88%] pt-6 pb-6 md:p-12 lg:p-18 mx-auto relative z-10 flex sm:justify-center lg:justify-start">
+                <div class="bg-white w-full max-w-xl border rounded-md py-14 px-7">
+                    <h2 class="text-3xl text-center font-semibold">
+                        Book An
+                        <span class="text-customGold px-2">Appointment</span>
+                    </h2>
+                    <form action="#" class="mt-6">
+                        <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                            <div class="form-group w-full">
+                                <input type="text" id="name" name="name" placeholder="Name *"
+                                    class="w-full p-2 border rounded bg-[#F4EFE1CC] border-none" required>
+                            </div>
+                            <div class="form-group w-full">
+                                <input type="tel" id="phone" name="phone" placeholder="Phone *"
+                                    class="w-full p-2 border rounded bg-[#F4EFE1CC] border-none" required>
+                            </div>
+                        </div>
+                        <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 mt-4">
+                            <div class="form-group w-full">
+                                <input type="text" id="date" name="date" placeholder="Date *"
+                                    class="w-full p-2 border rounded bg-[#F4EFE1CC] border-none" required>
+                            </div>
+                            <div class="form-group w-full">
+                                <input type="tel" id="time" name="time" placeholder="Time *"
+                                    class="w-full p-2 border rounded bg-[#F4EFE1CC] border-none" required>
+                            </div>
+                        </div>
+                        <div class="form-group w-full mt-4">
+                            <input type="tel" id="service" name="service" placeholder="Service Required *"
+                                class="w-full p-2 border rounded bg-[#F4EFE1CC] border-none" required>
+                        </div>
+                        <div class="flex justify-center mt-6">
+                            <button
+                                class="px-5 py-2 text-white border border-customGold rounded-md bg-[#273D32] hover:bg-customGold hover:text-[#273D32] transition duration-300">
+                                Book Appointment
+                                <ion-icon name="arrow-forward-circle-outline" class="ml-2"></ion-icon>
+                            </button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <!-- <div class="absolute bottom-0 right-[-15%] z-0 hidden xl:block">
+                <img src="./images/contat-img-1.png" alt="contact-img-1" class="max-w-[40%] h-auto" />
+            </div> -->
+        </section>
+
+    </main>
+
+    <footer class="bg-[#E4CB93] pt-12">
+        <div class="flex flex-col md:flex-row w-[90%] lg:w-[80%] mx-auto gap-6">
+            <!-- Left Section (Social Media + Image) -->
+            <div class="w-full md:w-3/6">
+                <div class="flex items-center md:items-start md:flex-row gap-6">
+                    <!-- Social Media Links -->
+                    <div class="w-full md:w-1/2">
+                        <h2 class="font-bold text-lg">Social Media</h2>
+                        <ul class="flex gap-4 mt-4 text-lg md:justify-start">
+                            <li><a href="#" class="text-[#374B41]"><ion-icon name="logo-linkedin"></ion-icon></a></li>
+                            <li><a href="#" class="text-[#374B41]"><ion-icon name="logo-instagram"></ion-icon></a></li>
+                            <li><a href="#" class="text-[#374B41]"><ion-icon name="logo-twitter"></ion-icon></a></li>
+                        </ul>
+                    </div>
+
+                    <!-- Image -->
+                    <div class="w-full md:w-3/6 flex items-center justify-start md:justify-start">
+                        <img class="w-full max-w-[65px] max-h-[129  px] h-auto" src="../images/fasion-img-6.png"
+                            alt="fasion-img-6">
+                    </div>
+                </div>
+
+                <!-- Footer Links -->
+                <div class="mt-6 md:mt-3">
+                    <div class="flex md:flex-row gap-6">
+                        <div class="w-full md:w-1/2">
+                            <h2 class="font-bold text-xl">Quick Links</h2>
+                            <ul class="space-y-2 text-lg ml-1">
+                                <li><a href="#" class="text-[#374B41] text-sm">Home page</a></li>
+                                <li><a href="#" class="text-[#374B41] text-sm">Services</a></li>
+                                <li><a href="#" class="text-[#374B41] text-sm">About Us</a></li>
+                                <li><a href="#" class="text-[#374B41] text-sm">Franchise</a></li>
+                                <li><a href="#" class="text-[#374B41] text-sm">Contact Us</a></li>
+                            </ul>
+                        </div>
+
+                        <!-- Duplicate Quick Links -->
+                        <div class="w-full md:w-1/2">
+                            <h2 class="font-bold text-xl">Gallery</h2>
+                            <ul class="text-lg ml-1">
+                                <li><a href="#" class="text-[#374B41] text-sm">Engagement</a></li>
+                                <li><a href="#" class="text-[#374B41] text-sm">Wedding</a></li>
+                                <li><a href="#" class="text-[#374B41] text-sm">Sangit</a></li>
+                                <li><a href="#" class="text-[#374B41] text-sm">Open - Hairstyle</a></li>
+                                <li><a href="#" class="text-[#374B41] text-sm">Braids</a></li>
+                                <li><a href="#" class="text-[#374B41] text-sm">Jewellery</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Right Section (Subscription Form) -->
+            <div class="w-full md:w-3/6">
+                <div class="w-auto">
+                    <h2 class="text-lg font-bold mb-4">We Don’t Keep Our Beauty Secrets</h2>
+                    <form action="#" method="POST" class="w-full">
+                        <div class="flex  sm:flex-row sm:items-center gap-4">
+                            <!-- Service Input -->
+                            <div class="w-full sm:w-[70%]">
+                                <input type="tel" id="service" name="service" placeholder="Service Required *"
+                                    class="w-full p-3 border rounded bg-[#FFFFFF] border-none focus:outline-none focus:ring-2 focus:ring-customGold"
+                                    required>
+                            </div>
+                            <!-- Subscribe Button -->
+                            <div class="sm:w-[30%] flex justify-center sm:justify-start">
+                                <button type="submit"
+                                    class="w-full sm:w-auto px-5 py-2 text-white border border-customGold rounded-md bg-[#273D32] hover:bg-customGold hover:text-[#273D32] transition duration-300">
+                                    Subscribe
+                                </button>
+                            </div>
+                        </div>
+                    </form>
+                    <p class="mt-4 text-sm  text-[#2B2B2B] text-start w-full xl:w-[75%]">
+                        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has
+                        been the
+                        industry's standard dummy text ever since the 1500s, when an unknown printer took a galley
+                        of type and scrambled it to make a type specimen book.
+                    </p>
+                </div>
+            </div>
+
+        </div>
+        <div class="border-t border-black mt-4 text-center w-full">
+
+        </div>
+        <div class="flex flex-col md:flex-row w-[90%] mx-auto gap-6 pb-4    ">
+            <p class="mt-4 text-sm  text-[#2B2B2B] w-full    text-center">
+                © Copyright 2023 | Sejal’s Beauty Clinic & Academy| All right reserved.
+            </p>
+        </div>
+
+    </footer>
+
+    <script>
+        const navlink = document.querySelector('.nav-link');
+
+        function onToggleMenu(e) {
+            e.name = e.name === 'menu' ? 'close' : 'menu';
+            navlink.classList.toggle('hidden');
+        }
+        window.onload = function () {
+            setTimeout(function () {
+                const loadingScreen = document.getElementById('loadingScreen');
+                if (loadingScreen) {
+                    loadingScreen.style.display = 'none';
+                }
+            }, 3000);  // 3000ms = 3 seconds, reduce for faster testing
+        };
+    </script>
+</body>
+
+</html>

@@ -35,8 +35,15 @@
 </head>
 
 <body class="bg-gray-100">
+    <div id="loadingScreen"
+        class="loading-screen fixed top-0 left-0 right-0 bottom-0 bg-[#273D32] flex justify-center items-center z-50">
+        <div class="flex flex-col items-center justify-center">
+            <img src="../images/web-logo.png" alt="web-logo">
+            <div class="text-white text-2xl font-semibold">Loading...</div>
+        </div>
+    </div>
     <!-- HEADER SECTION -->
-    <header class="bg-[#273D32] fixed top-0 left-0 right-0 z-50">
+    <header class="bg-[#273D32] fixed top-0 left-0 right-0 z-40">
         <nav class="flex justify-between items-center py-2 w-[90%] lg:w-[90%] mx-auto relative">
             <div>
                 <img class="w-22 h-12" src="../images/web-logo.png" alt="web-logo">
@@ -44,8 +51,8 @@
             <div class="lg:flex hidden gap-6 items-center">
                 <ul class="flex space-x-8">
                     <li><a class="text-white" href="../index.html">Home</a></li>
-                    <li><a class="text-white" href="../pages/AboutUs.html">About Us</a></li>
-                    <li><a class="text-white" href="#">Services</a></li>
+                    <li><a class="text-customGold" href="../pages/AboutUs.html">About Us</a></li>
+                    <li><a class="text-white" href="../pages/Services.html">Services</a></li>
                     <li><a class="text-white" href="#">Gallery</a></li>
                     <li><a class="text-white" href="#">Franchise</a></li>
                     <li><a class="text-white" href="#">Contact Us</a></li>
@@ -64,7 +71,7 @@
                 <li class="mobile-menu-border w-44 text-center"><a class="text-white" href="../index.html">Home</a></li>
                 <li class="mobile-menu-border w-44 text-center"><a class="text-white" href="../pages/AboutUs.html">About
                         Us</a></li>
-                <li class="mobile-menu-border w-44 text-center"><a class="text-white" href="#">Services</a></li>
+                <li class="mobile-menu-border w-44 text-center"><a class="text-white" href="../pages/Services.html">Services</a></li>
                 <li class="mobile-menu-border w-44 text-center"><a class="text-white" href="#">Gallery</a></li>
                 <li class="mobile-menu-border w-44 text-center"><a class="text-white" href="#">Franchise</a></li>
                 <li class="mobile-menu-border w-44 text-center"><a class="text-white" href="#">Contact Us</a></li>
@@ -386,6 +393,14 @@
             e.name = e.name === 'menu' ? 'close' : 'menu';
             navlink.classList.toggle('hidden');
         }
+        window.onload = function () {
+            setTimeout(function () {
+                const loadingScreen = document.getElementById('loadingScreen');
+                if (loadingScreen) {
+                    loadingScreen.style.display = 'none';
+                }
+            }, 3000);  // 3000ms = 3 seconds, reduce for faster testing
+        };
     </script>
 </body>
 
