@@ -28,3 +28,24 @@ body {
     animation: gradientAnimation 5s ease infinite
 }
 
+.back-design-img {
+    background-image: url('../images/back-design-img.png');
+    background-position: left center !important;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    opacity: 0.02;
+    z-index: 1;
+}
+
+section {
+    position: relative;
+    z-index: 2; 
+}
+
+
+
