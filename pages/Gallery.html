@@ -12,8 +12,8 @@
     <script src="https://cdn.tailwindcss.com"></script>
 
     <!-- Ionicons for Menu Icons -->
-    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
-    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <link rel="stylesheet" href="../css/all.min.css">
+    <link rel="stylesheet" href="../css/fontawesome.min.css">
 
     <!-- Quicksand Font -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -45,7 +45,7 @@
             <div class="text-white text-2xl font-semibold animate__animated animate__fadeIn animate__delay-1s">Loading...</div>
         </div>
     </div>
-    <!-- HEADER SECTION -->
+
     <header class="bg-[#273D32] fixed top-0 left-0 right-0 z-40">
         <nav class="flex justify-between items-center py-2 w-[90%] lg:w-[90%] mx-auto relative">
             <div>
@@ -54,35 +54,37 @@
             <div class="lg:flex hidden gap-6 items-center">
                 <ul class="flex space-x-8">
                     <li><a class="text-white" href="../index.html">Home</a></li>
-                    <li><a class="text-white" href="../pages/AboutUs.html">About Us</a></li>
-                    <li><a class="text-white" href="../pages/Services.html">Services</a></li>
+                    <li><a class="text-white" href="./AboutUs.html">About Us</a></li>
+                    <li><a class="text-white" href="./Services.html">Services</a></li>
                     <li><a class="text-customGold" href="#">Gallery</a></li>
-                    <li><a class="text-white" href="#">Franchise</a></li>
+                    <li><a class="text-white" href="./Franchise.html">Franchise</a></li>
                     <li><a class="text-white" href="#">Contact Us</a></li>
                 </ul>
             </div>
             <div class="flex items-center gap-4">
                 <button
-                    class="hidden md:block px-5 py-2 text-white border border-customGold rounded-md flex items-center">Book
-                    Appointment <ion-icon name="arrow-forward-circle-outline"></ion-icon></button>
-                <ion-icon onclick="onToggleMenu(this)" name="menu-outline"
-                    class="text-3xl cursor-pointer lg:hidden text-white"></ion-icon>
+                    class="hidden md:block px-5 py-2 text-white border border-customGold rounded-md flex items-center">
+                    Book Appointment <i class="fa-solid fa-mars-stroke-right"></i>
+                </button>
+                <i onclick="onToggleMenu(this)" id="menu-icon"
+                    class="fa-solid fa-bars-staggered text-3xl cursor-pointer lg:hidden text-white"></i>
             </div>
         </nav>
         <div class="nav-link lg:hidden absolute left-0 top-30 w-full h-screen bg-[#273D32] p-4 hidden border-t-0-5">
             <ul class="flex items-center flex-col gap-5">
                 <li class="mobile-menu-border w-44 text-center"><a class="text-white" href="../index.html">Home</a></li>
-                <li class="mobile-menu-border w-44 text-center"><a class="text-white" href="../pages/AboutUs.html">About
+                <li class="mobile-menu-border w-44 text-center"><a class="text-white" href="./AboutUs.html">About
                         Us</a></li>
                 <li class="mobile-menu-border w-44 text-center"><a class="text-white" href="./Services.html">Services</a></li>
-                <li class="mobile-menu-border w-44 text-center"><a class="text-white" href="#">Gallery</a></li>
-                <li class="mobile-menu-border w-44 text-center"><a class="text-white" href="#">Franchise</a></li>
+                <li class="mobile-menu-border w-44 text-center"><a class="text-white" href="./Gallery.html">Gallery</a></li>
+                <li class="mobile-menu-border w-44 text-center"><a class="text-white" href="./Franchise.html">Franchise</a></li>
                 <li class="mobile-menu-border w-44 text-center"><a class="text-white" href="#">Contact Us</a></li>
             </ul>
         </div>
     </header>
 
     <main class="">
+
         <section class="pt-24 pb-8 bg-[#273D32] relative">
             <div class="flex flex-col md:flex-row w-[90%] lg:w-[80%] mx-auto py-20">
                 <div class="text-center w-full">
@@ -141,7 +143,7 @@
                             <button
                                 class="px-5 py-2 text-white border border-customGold rounded-md bg-[#273D32] hover:bg-customGold hover:text-[#273D32] transition duration-300">
                                 Book Appointment
-                                <ion-icon name="arrow-forward-circle-outline" class="ml-2"></ion-icon>
+                                <i class="fa-solid fa-mars-stroke-right"></i>
                             </button>
                         </div>
                     </form>
@@ -162,9 +164,9 @@
                     <div class="w-full md:w-1/2">
                         <h2 class="font-bold text-lg">Social Media</h2>
                         <ul class="flex gap-4 mt-4 text-lg md:justify-start">
-                            <li><a href="#" class="text-[#374B41]"><ion-icon name="logo-linkedin"></ion-icon></a></li>
-                            <li><a href="#" class="text-[#374B41]"><ion-icon name="logo-instagram"></ion-icon></a></li>
-                            <li><a href="#" class="text-[#374B41]"><ion-icon name="logo-twitter"></ion-icon></a></li>
+                            <li><a href="#" class="text-[#374B41]"><i class="fa-brands fa-linkedin"></i></a></li>
+                            <li><a href="#" class="text-[#374B41]"><i class="fa-brands fa-instagram"></i></a></li>
+                            <li><a href="#" class="text-[#374B41]"><i class="fa-brands fa-twitter"></i></a></li>
                         </ul>
                     </div>
 
@@ -250,14 +252,16 @@
     <script>
         function onToggleMenu(icon) {
             const menu = document.querySelector('.nav-link');
-            const isVisible = !menu.classList.contains('hidden'); // Check if it's already visible
+            const isVisible = !menu.classList.contains('hidden');
 
             if (isVisible) {
-                menu.classList.add('hidden');  // Hide the menu
-                icon.name = 'menu-outline';    // Change the icon to "menu"
+                menu.classList.add('hidden');
+                icon.classList.remove('fa-times');  // Remove the 'close' icon
+                icon.classList.add('fa-bars-staggered');  // Add the 'bars' icon
             } else {
-                menu.classList.remove('hidden');  // Show the menu
-                icon.name = 'close-outline';       // Change the icon to "close"
+                menu.classList.remove('hidden');
+                icon.classList.remove('fa-bars-staggered');  // Remove the 'bars' icon
+                icon.classList.add('fa-times');  // Add the 'close' icon
             }
         }
 
@@ -267,7 +271,7 @@
                 if (loadingScreen) {
                     loadingScreen.style.display = 'none';
                 }
-            }, 3000);  // 3000ms = 3 seconds, reduce for faster testing
+            }, 3000);
         };
     </script>
     

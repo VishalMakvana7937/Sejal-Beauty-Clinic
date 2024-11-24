@@ -12,8 +12,8 @@
     <script src="https://cdn.tailwindcss.com"></script>
 
     <!-- Ionicons for Menu Icons -->
-    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
-    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <link rel="stylesheet" href="../css/all.min.css">
+    <link rel="stylesheet" href="../css/fontawesome.min.css">
 
     <!-- Quicksand Font -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -42,10 +42,11 @@
         class="loading-screen fixed top-0 left-0 right-0 bottom-0 bg-[#273D32] flex justify-center items-center z-50">
         <div class="flex flex-col items-center justify-center">
             <img src="../images/web-logo.png" alt="web-logo" class="animate__animated animate__fadeIn">
-            <div class="text-white text-2xl font-semibold animate__animated animate__fadeIn animate__delay-1s">Loading...</div>
+            <div class="text-white text-2xl font-semibold animate__animated animate__fadeIn animate__delay-1s">
+                Loading...</div>
         </div>
     </div>
-    <!-- HEADER SECTION -->
+
     <header class="bg-[#273D32] fixed top-0 left-0 right-0 z-40">
         <nav class="flex justify-between items-center py-2 w-[90%] lg:w-[90%] mx-auto relative">
             <div>
@@ -57,26 +58,30 @@
                     <li><a class="text-white" href="../pages/AboutUs.html">About Us</a></li>
                     <li><a class="text-customGold" href="../pages/Services.html">Services</a></li>
                     <li><a class="text-white" href="./Gallery.html">Gallery</a></li>
-                    <li><a class="text-white" href="#">Franchise</a></li>
+                    <li><a class="text-white" href="./Franchise.html">Franchise</a></li>
                     <li><a class="text-white" href="#">Contact Us</a></li>
                 </ul>
             </div>
             <div class="flex items-center gap-4">
                 <button
-                    class="hidden md:block px-5 py-2 text-white border border-customGold rounded-md flex items-center">Book
-                    Appointment <ion-icon name="arrow-forward-circle-outline"></ion-icon></button>
-                <ion-icon onclick="onToggleMenu(this)" name="menu-outline"
-                    class="text-3xl cursor-pointer lg:hidden text-white"></ion-icon>
+                    class="hidden md:block px-5 py-2 text-white border border-customGold rounded-md flex items-center">
+                    Book Appointment <i class="fa-solid fa-mars-stroke-right"></i>
+                </button>
+                <i onclick="onToggleMenu(this)" id="menu-icon"
+                    class="fa-solid fa-bars-staggered text-3xl cursor-pointer lg:hidden text-white"></i>
             </div>
         </nav>
         <div class="nav-link lg:hidden absolute left-0 top-30 w-full h-screen bg-[#273D32] p-4 hidden border-t-0-5">
             <ul class="flex items-center flex-col gap-5">
                 <li class="mobile-menu-border w-44 text-center"><a class="text-white" href="../index.html">Home</a></li>
-                <li class="mobile-menu-border w-44 text-center"><a class="text-white" href="../pages/AboutUs.html">About
+                <li class="mobile-menu-border w-44 text-center"><a class="text-white" href="./AboutUs.html">About
                         Us</a></li>
-                <li class="mobile-menu-border w-44 text-center"><a class="text-white" href="../Services.html">Services</a></li>
-                <li class="mobile-menu-border w-44 text-center"><a class="text-white" href="./Gallery.html">Gallery</a></li>
-                <li class="mobile-menu-border w-44 text-center"><a class="text-white" href="#">Franchise</a></li>
+                <li class="mobile-menu-border w-44 text-center"><a class="text-white"
+                        href="./Services.html">Services</a></li>
+                <li class="mobile-menu-border w-44 text-center"><a class="text-white" href="./Gallery.html">Gallery</a>
+                </li>
+                <li class="mobile-menu-border w-44 text-center"><a class="text-white"
+                        href="./AboutUs.html">Franchise</a></li>
                 <li class="mobile-menu-border w-44 text-center"><a class="text-white" href="#">Contact Us</a></li>
             </ul>
         </div>
@@ -116,27 +121,34 @@
                         <div class="p-6">
                             <h2 class="text-2xl">Bridal</h2>
                             <p class="mt-1 text-sm text-[#717171]">
-                                All products we use are professionaland have proven efficiency. Nocompromises.we Enhance natural a beauty, stand out with we a theme-inspired tbridal makeovers from our to special design service!took a galley of type and scrambled it to make a type specimen Lorem Ipsum is simply industry's standard dummydummy textbook.
+                                All products we use are professionaland have proven efficiency. Nocompromises.we Enhance
+                                natural a beauty, stand out with we a theme-inspired tbridal makeovers from our to
+                                special design service!took a galley of type and scrambled it to make a type specimen
+                                Lorem Ipsum is simply industry's standard dummydummy textbook.
                             </p>
                         </div>
                     </div>
-
                     <div class="flex flex-col items-center bg-white shadow-lg rounded-lg">
                         <img class="w-full max-h-[367.13px]" src="../images/beauty-img-4.png" alt="beauty-img-4">
                         <div class="p-6">
                             <h2 class="text-2xl">Hairdresser Services</h2>
                             <p class="mt-1 text-sm text-[#717171]">
-                                All products we use are professionaland have proven efficiency. Nocompromises.we Enhance natural a beauty, stand out with we a theme-inspired tbridal makeovers from our to special design service!took a galley of type and scrambled it to make a type specimen Lorem Ipsum is simply industry's standard dummydummy textbook.
+                                All products we use are professionaland have proven efficiency. Nocompromises.we Enhance
+                                natural a beauty, stand out with we a theme-inspired tbridal makeovers from our to
+                                special design service!took a galley of type and scrambled it to make a type specimen
+                                Lorem Ipsum is simply industry's standard dummydummy textbook.
                             </p>
                         </div>
                     </div>
-
                     <div class="flex flex-col items-center bg-white shadow-lg rounded-lg">
                         <img class="w-full max-h-[367.13px]" src="../images/beauty-img-5.png" alt="beauty-img-5">
                         <div class="p-6">
                             <h2 class="text-2xl">Hand $ Feets</h2>
                             <p class="mt-1 text-sm text-[#717171]">
-                                All products we use are professionaland have proven efficiency. Nocompromises.we Enhance natural a beauty, stand out with we a theme-inspired tbridal makeovers from our to special design service!took a galley of type and scrambled it to make a type specimen Lorem Ipsum is simply industry's standard dummydummy textbook.
+                                All products we use are professionaland have proven efficiency. Nocompromises.we Enhance
+                                natural a beauty, stand out with we a theme-inspired tbridal makeovers from our to
+                                special design service!took a galley of type and scrambled it to make a type specimen
+                                Lorem Ipsum is simply industry's standard dummydummy textbook.
                             </p>
                         </div>
                     </div>
@@ -145,7 +157,10 @@
                         <div class="p-6">
                             <h2 class="text-2xl">Treament</h2>
                             <p class="mt-1 text-sm text-[#717171]">
-                                All products we use are professionaland have proven efficiency. Nocompromises.we Enhance natural a beauty, stand out with we a theme-inspired tbridal makeovers from our to special design service!took a galley of type and scrambled it to make a type specimen Lorem Ipsum is simply industry's standard dummydummy textbook.
+                                All products we use are professionaland have proven efficiency. Nocompromises.we Enhance
+                                natural a beauty, stand out with we a theme-inspired tbridal makeovers from our to
+                                special design service!took a galley of type and scrambled it to make a type specimen
+                                Lorem Ipsum is simply industry's standard dummydummy textbook.
                             </p>
                         </div>
                     </div>
@@ -154,7 +169,10 @@
                         <div class="p-6">
                             <h2 class="text-2xl">Spa</h2>
                             <p class="mt-1 text-sm text-[#717171]">
-                                All products we use are professionaland have proven efficiency. Nocompromises.we Enhance natural a beauty, stand out with we a theme-inspired tbridal makeovers from our to special design service!took a galley of type and scrambled it to make a type specimen Lorem Ipsum is simply industry's standard dummydummy textbook.
+                                All products we use are professionaland have proven efficiency. Nocompromises.we Enhance
+                                natural a beauty, stand out with we a theme-inspired tbridal makeovers from our to
+                                special design service!took a galley of type and scrambled it to make a type specimen
+                                Lorem Ipsum is simply industry's standard dummydummy textbook.
                             </p>
                         </div>
                     </div>
@@ -163,7 +181,10 @@
                         <div class="p-6">
                             <h2 class="text-2xl">Treatment</h2>
                             <p class="mt-1 text-sm text-[#717171]">
-                                All products we use are professionaland have proven efficiency. Nocompromises.we Enhance natural a beauty, stand out with we a theme-inspired tbridal makeovers from our to special design service!took a galley of type and scrambled it to make a type specimen Lorem Ipsum is simply industry's standard dummydummy textbook.
+                                All products we use are professionaland have proven efficiency. Nocompromises.we Enhance
+                                natural a beauty, stand out with we a theme-inspired tbridal makeovers from our to
+                                special design service!took a galley of type and scrambled it to make a type specimen
+                                Lorem Ipsum is simply industry's standard dummydummy textbook.
                             </p>
                         </div>
                     </div>
@@ -214,7 +235,7 @@
                             <button
                                 class="px-5 py-2 text-white border border-customGold rounded-md bg-[#273D32] hover:bg-customGold hover:text-[#273D32] transition duration-300">
                                 Book Appointment
-                                <ion-icon name="arrow-forward-circle-outline" class="ml-2"></ion-icon>
+                                <i class="fa-solid fa-mars-stroke-right"></i>
                             </button>
                         </div>
                     </form>
@@ -229,27 +250,21 @@
 
     <footer class="bg-[#E4CB93] pt-12">
         <div class="flex flex-col md:flex-row w-[90%] lg:w-[80%] mx-auto gap-6">
-            <!-- Left Section (Social Media + Image) -->
             <div class="w-full md:w-3/6">
                 <div class="flex items-center md:items-start md:flex-row gap-6">
-                    <!-- Social Media Links -->
                     <div class="w-full md:w-1/2">
                         <h2 class="font-bold text-lg">Social Media</h2>
                         <ul class="flex gap-4 mt-4 text-lg md:justify-start">
-                            <li><a href="#" class="text-[#374B41]"><ion-icon name="logo-linkedin"></ion-icon></a></li>
-                            <li><a href="#" class="text-[#374B41]"><ion-icon name="logo-instagram"></ion-icon></a></li>
-                            <li><a href="#" class="text-[#374B41]"><ion-icon name="logo-twitter"></ion-icon></a></li>
+                            <li><a href="#" class="text-[#374B41]"><i class="fa-brands fa-linkedin"></i></a></li>
+                            <li><a href="#" class="text-[#374B41]"><i class="fa-brands fa-instagram"></i></a></li>
+                            <li><a href="#" class="text-[#374B41]"><i class="fa-brands fa-twitter"></i></a></li>
                         </ul>
                     </div>
-
-                    <!-- Image -->
                     <div class="w-full md:w-3/6 flex items-center justify-start md:justify-start">
                         <img class="w-full max-w-[65px] max-h-[129  px] h-auto" src="../images/fasion-img-6.png"
                             alt="fasion-img-6">
                     </div>
                 </div>
-
-                <!-- Footer Links -->
                 <div class="mt-6 md:mt-3">
                     <div class="flex md:flex-row gap-6">
                         <div class="w-full md:w-1/2">
@@ -262,8 +277,6 @@
                                 <li><a href="#" class="text-[#374B41] text-sm">Contact Us</a></li>
                             </ul>
                         </div>
-
-                        <!-- Duplicate Quick Links -->
                         <div class="w-full md:w-1/2">
                             <h2 class="font-bold text-xl">Gallery</h2>
                             <ul class="text-lg ml-1">
@@ -278,8 +291,6 @@
                     </div>
                 </div>
             </div>
-
-            <!-- Right Section (Subscription Form) -->
             <div class="w-full md:w-3/6">
                 <div class="w-auto">
                     <h2 class="text-lg font-bold mb-4">We Don’t Keep Our Beauty Secrets</h2>
@@ -308,30 +319,29 @@
                     </p>
                 </div>
             </div>
-
         </div>
         <div class="border-t border-black mt-4 text-center w-full">
-
         </div>
         <div class="flex flex-col md:flex-row w-[90%] mx-auto gap-6 pb-4    ">
             <p class="mt-4 text-sm  text-[#2B2B2B] w-full    text-center">
                 © Copyright 2023 | Sejal’s Beauty Clinic & Academy| All right reserved.
             </p>
         </div>
-
     </footer>
 
     <script>
         function onToggleMenu(icon) {
             const menu = document.querySelector('.nav-link');
-            const isVisible = !menu.classList.contains('hidden'); // Check if it's already visible
+            const isVisible = !menu.classList.contains('hidden');
 
             if (isVisible) {
-                menu.classList.add('hidden');  // Hide the menu
-                icon.name = 'menu-outline';    // Change the icon to "menu"
+                menu.classList.add('hidden');
+                icon.classList.remove('fa-times');  // Remove the 'close' icon
+                icon.classList.add('fa-bars-staggered');  // Add the 'bars' icon
             } else {
-                menu.classList.remove('hidden');  // Show the menu
-                icon.name = 'close-outline';       // Change the icon to "close"
+                menu.classList.remove('hidden');
+                icon.classList.remove('fa-bars-staggered');  // Remove the 'bars' icon
+                icon.classList.add('fa-times');  // Add the 'close' icon
             }
         }
 
@@ -341,10 +351,10 @@
                 if (loadingScreen) {
                     loadingScreen.style.display = 'none';
                 }
-            }, 3000);  // 3000ms = 3 seconds, reduce for faster testing
+            }, 3000);
         };
     </script>
-    
+
 </body>
 
 </html>

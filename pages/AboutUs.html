@@ -12,8 +12,8 @@
     <script src="https://cdn.tailwindcss.com"></script>
 
     <!-- Ionicons for Menu Icons -->
-    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
-    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <link rel="stylesheet" href="../css/all.min.css">
+    <link rel="stylesheet" href="../css/fontawesome.min.css">
 
     <!-- Quicksand Font -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -42,10 +42,11 @@
         class="loading-screen fixed top-0 left-0 right-0 bottom-0 bg-[#273D32] flex justify-center items-center z-50">
         <div class="flex flex-col items-center justify-center">
             <img src="../images/web-logo.png" alt="web-logo" class="animate__animated animate__fadeIn">
-            <div class="text-white text-2xl font-semibold animate__animated animate__fadeIn animate__delay-1s">Loading...</div>
+            <div class="text-white text-2xl font-semibold animate__animated animate__fadeIn animate__delay-1s">
+                Loading...</div>
         </div>
     </div>
-    <!-- HEADER SECTION -->
+
     <header class="bg-[#273D32] fixed top-0 left-0 right-0 z-40">
         <nav class="flex justify-between items-center py-2 w-[90%] lg:w-[90%] mx-auto relative">
             <div>
@@ -54,29 +55,33 @@
             <div class="lg:flex hidden gap-6 items-center">
                 <ul class="flex space-x-8">
                     <li><a class="text-white" href="../index.html">Home</a></li>
-                    <li><a class="text-customGold" href="../pages/AboutUs.html">About Us</a></li>
-                    <li><a class="text-white" href="../pages/Services.html">Services</a></li>
+                    <li><a class="text-customGold" href="./AboutUs.html">About Us</a></li>
+                    <li><a class="text-white" href="./Services.html">Services</a></li>
                     <li><a class="text-white" href="./Gallery.html">Gallery</a></li>
-                    <li><a class="text-white" href="#">Franchise</a></li>
+                    <li><a class="text-white" href="./Franchise.html">Franchise</a></li>
                     <li><a class="text-white" href="#">Contact Us</a></li>
                 </ul>
             </div>
             <div class="flex items-center gap-4">
                 <button
-                    class="hidden md:block px-5 py-2 text-white border border-customGold rounded-md flex items-center">Book
-                    Appointment <ion-icon name="arrow-forward-circle-outline"></ion-icon></button>
-                <ion-icon onclick="onToggleMenu(this)" name="menu-outline"
-                    class="text-3xl cursor-pointer lg:hidden text-white"></ion-icon>
+                    class="hidden md:block px-5 py-2 text-white border border-customGold rounded-md flex items-center">
+                    Book Appointment <i class="fa-solid fa-mars-stroke-right"></i>
+                </button>
+                <i onclick="onToggleMenu(this)" id="menu-icon"
+                    class="fa-solid fa-bars-staggered text-3xl cursor-pointer lg:hidden text-white"></i>
             </div>
         </nav>
         <div class="nav-link lg:hidden absolute left-0 top-30 w-full h-screen bg-[#273D32] p-4 hidden border-t-0-5">
             <ul class="flex items-center flex-col gap-5">
                 <li class="mobile-menu-border w-44 text-center"><a class="text-white" href="../index.html">Home</a></li>
-                <li class="mobile-menu-border w-44 text-center"><a class="text-white" href="../pages/AboutUs.html">About
+                <li class="mobile-menu-border w-44 text-center"><a class="text-white" href="./AboutUs.html">About
                         Us</a></li>
-                <li class="mobile-menu-border w-44 text-center"><a class="text-white" href="../pages/Services.html">Services</a></li>
-                <li class="mobile-menu-border w-44 text-center"><a class="text-white" href="./Gallery.html">Gallery</a></li>
-                <li class="mobile-menu-border w-44 text-center"><a class="text-white" href="#">Franchise</a></li>
+                <li class="mobile-menu-border w-44 text-center"><a class="text-white"
+                        href="./Services.html">Services</a></li>
+                <li class="mobile-menu-border w-44 text-center"><a class="text-white" href="./Gallery.html">Gallery</a>
+                </li>
+                <li class="mobile-menu-border w-44 text-center"><a class="text-white"
+                        href="./Franchise.html">Franchise</a></li>
                 <li class="mobile-menu-border w-44 text-center"><a class="text-white" href="#">Contact Us</a></li>
             </ul>
         </div>
@@ -109,7 +114,6 @@
             </h2>
             <div class="flex flex-col md:flex-row w-[90%] lg:w-[80%] mx-auto">
                 <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-
                     <div class="flex flex-col items-center bg-white shadow-lg rounded-lg">
                         <img class="w-full max-h-[500px]" src="../images/fasion-img-7.png" alt="fasion-img-7">
                         <div class="p-6">
@@ -121,7 +125,6 @@
                             </p>
                         </div>
                     </div>
-
                     <div class="flex flex-col items-center bg-white shadow-lg rounded-lg">
                         <img class="w-full max-h-[367.13px]" src="../images/fasion-img-8.png" alt="fasion-img-8">
                         <div class="p-6">
@@ -133,7 +136,6 @@
                             </p>
                         </div>
                     </div>
-
                     <div class="flex flex-col items-center bg-white shadow-lg rounded-lg">
                         <img class="w-full max-h-[367.13px]" src="../images/fasion-img-9.png" alt="fasion-img-9">
                         <div class="p-6">
@@ -213,34 +215,33 @@
                         <div class="flex">
                             <ul class="font-medium mt-2 mr-3">
                                 <li class="flex items-center gap-2 mb-1 text-sm">
-                                    <ion-icon class="text-2xl bg-[#273D32] rounded-full text-white"
-                                        name="checkmark-circle-outline"></ion-icon> Body Treatment
+                                    <i class="fa-regular fa-circle-check bg-[#273D32] rounded-full text-white p-1"></i>
+                                    Body Treatment
                                 </li>
-                                <li class="flex items-center gap-2 mb-1 text-sm">
-                                    <ion-icon class="text-2xl bg-[#273D32] rounded-full text-white"
-                                        name="checkmark-circle-outline"></ion-icon> Skin Care
+                                <li class="flex items-center gap-2 mb-1 text-sm"><i
+                                        class="fa-regular fa-circle-check bg-[#273D32] rounded-full text-white p-1"></i>
+                                    Skin Care
                                 </li>
-                                <li class="flex items-center gap-2 text-sm">
-                                    <ion-icon class="text-2xl bg-[#273D32] rounded-full text-white"
-                                        name="checkmark-circle-outline"></ion-icon> Massage Therapy
+                                <li class="flex items-center gap-2 text-sm"><i
+                                        class="fa-regular fa-circle-check bg-[#273D32] rounded-full text-white p-1"></i>
+                                    Massage Therapy
                                 </li>
                             </ul>
                             <ul class="font-medium mt-2">
-                                <li class="flex items-center gap-2 mb-1 text-sm">
-                                    <ion-icon class="text-2xl bg-[#273D32] rounded-full text-white"
-                                        name="checkmark-circle-outline"></ion-icon> Body Treatment
+                                <li class="flex items-center gap-2 mb-1 text-sm"><i
+                                        class="fa-regular fa-circle-check bg-[#273D32] rounded-full text-white p-1"></i>
+                                    Body Treatment
                                 </li>
-                                <li class="flex items-center gap-2 mb-1 text-sm">
-                                    <ion-icon class="text-2xl bg-[#273D32] rounded-full text-white"
-                                        name="checkmark-circle-outline"></ion-icon> Skin Care
+                                <li class="flex items-center gap-2 mb-1 text-sm"><i
+                                        class="fa-regular fa-circle-check bg-[#273D32] rounded-full text-white p-1"></i>Skin
+                                    Care
                                 </li>
-                                <li class="flex items-center gap-2 text-sm">
-                                    <ion-icon class="text-2xl bg-[#273D32] rounded-full text-white"
-                                        name="checkmark-circle-outline"></ion-icon> Massage Therapy
+                                <li class="flex items-center gap-2 text-sm"><i
+                                        class="fa-regular fa-circle-check bg-[#273D32] rounded-full text-white p-1"></i>
+                                    Massage Therapy
                                 </li>
                             </ul>
                         </div>
-
                     </div>
                 </div>
             </div>
@@ -298,27 +299,21 @@
 
     <footer class="bg-[#E4CB93] pt-12">
         <div class="flex flex-col md:flex-row w-[90%] lg:w-[80%] mx-auto gap-6">
-            <!-- Left Section (Social Media + Image) -->
             <div class="w-full md:w-3/6">
                 <div class="flex items-center md:items-start md:flex-row gap-6">
-                    <!-- Social Media Links -->
                     <div class="w-full md:w-1/2">
                         <h2 class="font-bold text-lg">Social Media</h2>
                         <ul class="flex gap-4 mt-4 text-lg md:justify-start">
-                            <li><a href="#" class="text-[#374B41]"><ion-icon name="logo-linkedin"></ion-icon></a></li>
-                            <li><a href="#" class="text-[#374B41]"><ion-icon name="logo-instagram"></ion-icon></a></li>
-                            <li><a href="#" class="text-[#374B41]"><ion-icon name="logo-twitter"></ion-icon></a></li>
+                            <li><a href="#" class="text-[#374B41]"><i class="fa-brands fa-linkedin"></i></a></li>
+                            <li><a href="#" class="text-[#374B41]"><i class="fa-brands fa-instagram"></i></a></li>
+                            <li><a href="#" class="text-[#374B41]"><i class="fa-brands fa-twitter"></i></a></li>
                         </ul>
                     </div>
-
-                    <!-- Image -->
                     <div class="w-full md:w-3/6 flex items-center justify-start md:justify-start">
                         <img class="w-full max-w-[65px] max-h-[129  px] h-auto" src="../images/fasion-img-6.png"
                             alt="fasion-img-6">
                     </div>
                 </div>
-
-                <!-- Footer Links -->
                 <div class="mt-6 md:mt-3">
                     <div class="flex md:flex-row gap-6">
                         <div class="w-full md:w-1/2">
@@ -331,8 +326,6 @@
                                 <li><a href="#" class="text-[#374B41] text-sm">Contact Us</a></li>
                             </ul>
                         </div>
-
-                        <!-- Duplicate Quick Links -->
                         <div class="w-full md:w-1/2">
                             <h2 class="font-bold text-xl">Gallery</h2>
                             <ul class="text-lg ml-1">
@@ -347,8 +340,6 @@
                     </div>
                 </div>
             </div>
-
-            <!-- Right Section (Subscription Form) -->
             <div class="w-full md:w-3/6">
                 <div class="w-auto">
                     <h2 class="text-lg font-bold mb-4">We Don’t Keep Our Beauty Secrets</h2>
@@ -377,30 +368,29 @@
                     </p>
                 </div>
             </div>
-
         </div>
         <div class="border-t border-black mt-4 text-center w-full">
-
         </div>
         <div class="flex flex-col md:flex-row w-[90%] mx-auto gap-6 pb-4    ">
             <p class="mt-4 text-sm  text-[#2B2B2B] w-full    text-center">
                 © Copyright 2023 | Sejal’s Beauty Clinic & Academy| All right reserved.
             </p>
         </div>
-
     </footer>
 
     <script>
         function onToggleMenu(icon) {
             const menu = document.querySelector('.nav-link');
-            const isVisible = !menu.classList.contains('hidden'); // Check if it's already visible
+            const isVisible = !menu.classList.contains('hidden');
 
             if (isVisible) {
-                menu.classList.add('hidden');  // Hide the menu
-                icon.name = 'menu-outline';    // Change the icon to "menu"
+                menu.classList.add('hidden');
+                icon.classList.remove('fa-times');  // Remove the 'close' icon
+                icon.classList.add('fa-bars-staggered');  // Add the 'bars' icon
             } else {
-                menu.classList.remove('hidden');  // Show the menu
-                icon.name = 'close-outline';       // Change the icon to "close"
+                menu.classList.remove('hidden');
+                icon.classList.remove('fa-bars-staggered');  // Remove the 'bars' icon
+                icon.classList.add('fa-times');  // Add the 'close' icon
             }
         }
 
@@ -410,10 +400,10 @@
                 if (loadingScreen) {
                     loadingScreen.style.display = 'none';
                 }
-            }, 3000);  // 3000ms = 3 seconds, reduce for faster testing
+            }, 3000);
         };
     </script>
-    
+
 </body>
 
 </html>
