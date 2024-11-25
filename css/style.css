@@ -28,6 +28,7 @@ body {
     animation: gradientAnimation 5s ease infinite
 }
 
+/* For background image with low opacity */
 .back-design-img {
     background-image: url('../images/back-design-img.png');
     background-position: left center !important;
@@ -39,12 +40,7 @@ body {
     right: 0;
     bottom: 0;
     opacity: 0.02;
-    z-index: 1;
-}
-
-section {
-    position: relative;
-    z-index: 2; 
+    z-index: 1; 
 }
 
 

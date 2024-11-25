@@ -201,33 +201,98 @@
             </div> -->
         </section>
 
-        <section class="py-14 mb-16 bg-[#273D32]">
+        <section class="py-14 bg-[#273D32]">
             <div class="flex flex-col md:flex-row w-[90%] lg:w-[80%] mx-auto">
                 <img class="w-full max-h-[632px]" src="../images/beauty-img-9.png" alt="beauty-img-9">
             </div>
         </section>
 
-        <section class="pb-24 pt-12 mb-16 bg-cover bg-center bg-no-repeat opacity-100 relative">
+        <section class="py-12 bg-cover bg-center bg-no-repeat opacity-100 relative">
             <div class="back-design-img absolute inset-0 opacity-[2%]"></div>
             <div
                 class="flex flex-col flex-col-reverse md:flex-row w-[90%] lg:w-[80%] mx-auto gap-6 p-24 border-2 border-solid border-[#273D32] z-10">
-                <div class="w-full md:w-1/3 flex items-center justify-center md:justify-start relative">
+                <div class="w-full md:w-1/3 flex items-center justify-center md:justify-start">
                     <div class="w-full text-center">
                         <h2 class="text-3xl font-bold">Rs 10L</h2>
                         <p class="mt-1 text-sm text-[#717171]">Initial Investments</p>
                     </div>
                 </div>
-                <div class="w-full md:w-1/3 flex items-center justify-center md:justify-start relative">
+                <div class="w-full md:w-1/3 flex items-center justify-center md:justify-start">
                     <div class="w-full text-center">
                         <h2 class="text-3xl font-bold">12 Month</h2>
                         <p class="mt-1 text-sm text-[#717171]">Estimated Payback</p>
                     </div>
                 </div>
-                <div class="w-full md:w-1/3 flex items-center justify-center md:justify-start relative">
+                <div class="w-full md:w-1/3 flex items-center justify-center md:justify-start">
                     <div class="w-full text-center">
                         <h2 class="text-3xl font-bold">From 13%</h2>
                         <p class="mt-1 text-sm text-[#717171]">Profitability</p>
                     </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="mb-16 bg-[#E4CB9380] py-16">
+            <h2 class="text-4xl text-center font-semibold mb-6">
+                Benefits
+            </h2>
+            <div class="flex flex-col md:flex-row w-[90%] lg:w-[80%] mx-auto gap-6">
+                <div class="w-full md:w-1/2 flex items-stretch md:justify-start relative">
+                    <div class="w-full bg-white">
+                        <div class="p-4 border-b border-gray-300 flex justify-between items-center">
+                            <div>
+                                <h2 class="font-semibold text-gray-800">Well-Known Brand</h2>
+                                <p class="text-sm text-gray-600">
+                                    Sejal's Beauty Salon Is A Well-Known Brand Worldwide. This Will Guarantee You Stable
+                                    Market Share.
+                                </p>
+                            </div>
+                            <button class="text-gray-800 hover:text-gray-600">&times;</button>
+                        </div>
+                        <div class="group">
+                            <button onclick="toggleDropdown('franchise')"
+                                class="w-full flex justify-between items-center p-4 hover:bg-gray-100 focus:outline-none border-b border-gray-300">
+                                <span class="text-gray-800">Franchise Guide</span>
+                                <span class="text-gray-800 group-hover:rotate-180 transition-transform">&plus;</span>
+                            </button>
+                            <div id="franchise" class="hidden p-4 text-sm text-gray-600 bg-gray-50">
+                                Information about the franchise guide goes here.
+                            </div>
+                        </div>
+                        <div class="group">
+                            <button onclick="toggleDropdown('support')"
+                                class="w-full flex justify-between items-center p-4 hover:bg-gray-100 focus:outline-none border-b border-gray-300">
+                                <span class="text-gray-800">Support Team</span>
+                                <span class="text-gray-800 group-hover:rotate-180 transition-transform">&plus;</span>
+                            </button>
+                            <div id="support" class="hidden p-4 text-sm text-gray-600 bg-gray-50">
+                                Information about the support team goes here.
+                            </div>
+                        </div>
+                        <div class="group">
+                            <button onclick="toggleDropdown('academy')"
+                                class="w-full flex justify-between items-center p-4 hover:bg-gray-100 focus:outline-none border-b border-gray-300">
+                                <span class="text-gray-800">Academy For Team</span>
+                                <span class="text-gray-800 group-hover:rotate-180 transition-transform">&plus;</span>
+                            </button>
+                            <div id="academy" class="hidden p-4 text-sm text-gray-600 bg-gray-50">
+                                Information about the academy for the team goes here.
+                            </div>
+                        </div>
+                        <div class="group">
+                            <button onclick="toggleDropdown('managing')"
+                                class="w-full flex justify-between items-center p-4 hover:bg-gray-100 focus:outline-none border-b border-gray-300">
+                                <span class="text-gray-800">Managing Partners School</span>
+                                <span class="text-gray-800 group-hover:rotate-180 transition-transform">&plus;</span>
+                            </button>
+                            <div id="managing" class="hidden p-4 text-sm text-gray-600 bg-gray-50">
+                                Information about the managing partners school goes here.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="w-full md:w-1/2 flex items-center justify-center md:justify-start min-h-full">
+                    <img src="../images/beauty-img-10.png" alt="beauty-img-10" class="object-cover w-full h-full">
                 </div>
             </div>
         </section>
@@ -315,6 +380,12 @@
     </footer>
 
     <script>
+
+        function toggleDropdown(id) {
+            const element = document.getElementById(id);
+            element.classList.toggle('hidden');
+        }
+
         function onToggleMenu(icon) {
             const menu = document.querySelector('.nav-link');
             const isVisible = !menu.classList.contains('hidden');
@@ -336,7 +407,7 @@
                 if (loadingScreen) {
                     loadingScreen.style.display = 'none';
                 }
-            }, 3000);
+            },);
         };
     </script>
 
