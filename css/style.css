@@ -40,8 +40,32 @@ body {
     right: 0;
     bottom: 0;
     opacity: 0.02;
-    z-index: 1; 
+    z-index: -1 !important; 
 }
 
+/* Small screens */
+@media (max-width: 640px) {
+    /* Styles for small devices */
+  }
+  
+  /* Medium screens */
+  @media (max-width: 768px) {
+    /* Styles for medium devices */
+  }
+  
+  /* Large screens */
+  @media (max-width: 1024px) {
+    /* Styles for large devices */
+  }
+  
+  /* Extra-large screens */
+  @media (max-width: 1280px) {
+    /* Styles for extra large devices */
+  }
+  
+  /* 2x Extra-large screens */
+  @media (max-width: 1536px) {
 
+  }
+  
 
