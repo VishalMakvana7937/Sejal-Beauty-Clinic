@@ -1,72 +1,76 @@
 .border-t-0-5 {
-    border-top: 0.1px solid white;
+  border-top: 0.1px solid white;
 }
 
 .mobile-menu-border {
-    border-bottom: 2px solid #dabe80;
+  border-bottom: 2px solid #dabe80;
 }
 
 .appointment-booking-bg-img {
-    background-image: url('../images/contat-img.png');
-    background-position: left center !important;
+  background-image: url('../images/contat-img.png');
+  background-position: left center !important;
 }
 
 body {
-    font-family: "Quicksand", sans-serif;
-    font-optical-sizing: auto;
-    font-weight: <weight>;
-    font-style: normal;
+  font-family: "Quicksand", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
 }
 
-.fi-icon{
-    background-color: #2B292980;
+.fi-icon {
+  background-color: #2B292980;
 }
 
-.fixed-in-icon{
-    background: linear-gradient(45deg, #FAE100, #FCB720, #FF7950, #FF1C74, #6C1CD1);
-    background-size: 300% 300%;
-    animation: gradientAnimation 5s ease infinite
+.fixed-in-icon {
+  background: linear-gradient(45deg, #FAE100, #FCB720, #FF7950, #FF1C74, #6C1CD1);
+  background-size: 300% 300%;
+  animation: gradientAnimation 5s ease infinite
 }
 
 /* For background image with low opacity */
 .back-design-img {
-    background-image: url('../images/back-design-img.png');
-    background-position: left center !important;
-    background-repeat: no-repeat;
-    background-size: cover;
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    opacity: 0.02;
-    z-index: -1 !important; 
+  background-image: url('../images/back-design-img.png');
+  background-position: left center !important;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  opacity: 0.02;
+  z-index: -1 !important;
+}
+
+.slick-slide img {
+  border-radius: 8px;
+}
+
+.slick-prev,
+.slick-next {
+  display: none !important;
 }
 
 /* Small screens */
 @media (max-width: 640px) {
-    /* Styles for small devices */
-  }
-  
-  /* Medium screens */
-  @media (max-width: 768px) {
-    /* Styles for medium devices */
-  }
-  
-  /* Large screens */
-  @media (max-width: 1024px) {
-    /* Styles for large devices */
-  }
-  
-  /* Extra-large screens */
-  @media (max-width: 1280px) {
-    /* Styles for extra large devices */
-  }
-  
-  /* 2x Extra-large screens */
-  @media (max-width: 1536px) {
-   
+  /* Styles for small devices */
+}
 
-  }
-  
+/* Medium screens */
+@media (max-width: 768px) {
+  /* Styles for medium devices */
+}
 
+/* Large screens */
+@media (max-width: 1024px) {
+  /* Styles for large devices */
+}
+
+/* Extra-large screens */
+@media (max-width: 1280px) {
+  /* Styles for extra large devices */
+}
+
+/* 2x Extra-large screens */
+@media (max-width: 1536px) {}

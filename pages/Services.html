@@ -23,6 +23,10 @@
     <!-- Animate.css -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
 
+    <!-- Slick Slider CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css" />
+
     <script>
         // Tailwind custom theme colors
         tailwind.config = {
@@ -54,12 +58,17 @@
             </div>
             <div class="lg:flex hidden gap-6 items-center">
                 <ul class="flex space-x-8">
-                    <li><a class="text-white hover:text-customGold transition duration-300" href="../index.html">Home</a></li>
-                    <li><a class="text-white hover:text-customGold transition duration-300" href="../pages/AboutUs.html">About Us</a></li>
+                    <li><a class="text-white hover:text-customGold transition duration-300"
+                            href="../index.html">Home</a></li>
+                    <li><a class="text-white hover:text-customGold transition duration-300"
+                            href="../pages/AboutUs.html">About Us</a></li>
                     <li><a class="text-customGold" href="../pages/Services.html">Services</a></li>
-                    <li><a class="text-white hover:text-customGold transition duration-300" href="./Gallery.html">Gallery</a></li>
-                    <li><a class="text-white hover:text-customGold transition duration-300" href="./Franchise.html">Franchise</a></li>
-                    <li><a class="text-white hover:text-customGold transition duration-300" href="./ContactUs.html">Contact Us</a></li>
+                    <li><a class="text-white hover:text-customGold transition duration-300"
+                            href="./Gallery.html">Gallery</a></li>
+                    <li><a class="text-white hover:text-customGold transition duration-300"
+                            href="./Franchise.html">Franchise</a></li>
+                    <li><a class="text-white hover:text-customGold transition duration-300"
+                            href="./ContactUs.html">Contact Us</a></li>
                 </ul>
             </div>
             <div class="flex items-center gap-4">
@@ -252,6 +261,42 @@
                 <img src="./images/contat-img-1.png" alt="contact-img-1" class="max-w-[40%] h-auto" />
             </div> -->
         </section>
+
+        <section class="mb-16">
+            <div class="w-[90%] lg:w-[80%] mx-auto relative">
+              <!-- Slider Section -->
+              <div class="slider">
+                <div class="slider-item mx-4">
+                  <img src="../images/b1.png" alt="b1" class="w-full h-52 object-cover rounded-md shadow-lg object-top">
+                </div>
+                <div class="slider-item mx-4">
+                  <img src="../images/b2.png" alt="b2" class="w-full h-52 object-cover rounded-md shadow-lg object-top">
+                </div>
+                <div class="slider-item mx-4">
+                  <img src="../images/b3.png" alt="b3" class="w-full h-52 object-cover rounded-md shadow-lg object-top">
+                </div>
+                <div class="slider-item mx-4">
+                  <img src="../images/b4.png" alt="b4" class="w-full h-52 object-cover rounded-md shadow-lg object-top">
+                </div>
+                <div class="slider-item mx-4">
+                  <img src="../images/b2.png" alt="b2" class="w-full h-52 object-cover rounded-md shadow-lg object-top">
+                </div>
+                <div class="slider-item mx-4">
+                  <img src="../images/b3.png" alt="b3" class="w-full h-52 object-cover rounded-md shadow-lg object-top">
+                </div>
+              </div>
+          
+              <!-- Custom Buttons -->
+              <button
+                class="custom-prev absolute -top-4 right-16 bg-gray-800 text-white rounded-full w-10 h-10 flex items-center justify-center shadow-md hover:bg-gray-600 transition duration-300">
+                <i class="fa-solid fa-caret-left"></i>
+              </button>
+              <button
+                class="custom-next absolute -top-4 right-4 bg-gray-800 text-white rounded-full w-10 h-10 flex items-center justify-center shadow-md hover:bg-gray-600 transition duration-300">
+                <i class="fa-solid fa-caret-right"></i>
+              </button>
+            </div>
+          </section>
     </main>
 
     <footer class="bg-[#E4CB93] pt-12">
@@ -359,6 +404,49 @@
                 }
             }, 3000);
         };
+    </script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            const $slider = $('.slider');
+            $slider.slick({
+                slidesToShow: 4, // Show 4 images at a time
+                slidesToScroll: 1,
+                autoplay: true,
+                autoplaySpeed: 2000,
+                arrows: false, // Disable default arrows
+                dots: false,
+                responsive: [
+                    {
+                        breakpoint: 1024,
+                        settings: {
+                            slidesToShow: 3,
+                        },
+                    },
+                    {
+                        breakpoint: 768,
+                        settings: {
+                            slidesToShow: 2,
+                        },
+                    },
+                    {
+                        breakpoint: 480,
+                        settings: {
+                            slidesToShow: 1,
+                        },
+                    },
+                ],
+            });
+
+            // Custom button actions
+            $('.custom-prev').on('click', function () {
+                $slider.slick('slickPrev');
+            });
+            $('.custom-next').on('click', function () {
+                $slider.slick('slickNext');
+            });
+        });
     </script>
 
 </body>
