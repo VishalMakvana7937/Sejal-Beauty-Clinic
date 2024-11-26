@@ -65,7 +65,7 @@
             </div>
             <div class="flex items-center gap-4">
                 <button
-                    class="hidden md:block px-5 py-2 text-white border border-customGold rounded-md flex items-center">
+                    class="hidden md:block px-5 py-2 text-white border border-customGold rounded-md flex items-center hover:bg-customGold hover:text-[#273D32] transition duration-300">
                     Book Appointment <i class="fa-solid fa-mars-stroke-right"></i>
                 </button>
                 <i onclick="onToggleMenu(this)" id="menu-icon"
@@ -90,11 +90,14 @@
     </header>
 
     <div class="fixed bottom-[2%] right-[1%] z-30 flex flex-col items-center gap-2 mt-4 mr-2 fade-in hidden lg:block">
-        <div class="fi-icon p-2 xl:p-3 rounded-full shadow-lg z-0 flex items-center justify-center mb-2">
-            <i class="fa-brands fa-facebook text-2xl p-2 rounded-full text-[#3B5998] bg-[#DABE80]"></i>
+        <!-- Facebook Icon -->
+        <div class="fi-icon p-3 xl:p-3 rounded-full shadow-lg z-0 flex items-center justify-center mb-2">
+            <i class="fa-brands fa-facebook text-2xl py-1 px-2 rounded-full text-[#3B5998] bg-[#DABE80]"></i>
         </div>
-        <div class="fi-icon p-2 xl:p-3 rounded-full shadow-lg z-0 flex items-center justify-center">
-            <i class="fa-brands fa-instagram fixed-in-icon text-2xl p-2 rounded-full bg-[#DABE80]"></i>
+
+        <!-- Instagram Icon -->
+        <div class="fi-icon p-3 xl:p-3 rounded-full shadow-lg z-0 flex items-center justify-center">
+            <i class="fa-brands fa-instagram text-2xl py-1 px-2 rounded-full bg-[#DABE80] text-[#D6387C]"></i>
         </div>
     </div>
 
@@ -104,7 +107,7 @@
             <div class="flex flex-col md:flex-row w-[90%] lg:w-[80%] mx-auto">
                 <div class="md:w-1/3 flex justify-start items-center">
                     <img src="./images/fasion-img-3.png" alt="Placeholder Image"
-                        class="banner-img w-[82%] 2xl:w-3/4 xl:w-10/12 lg:w-11/12 md:w-full sm:w-3/5 h-auto rounded-br-[75px] rounded-tr-[75px] rounded-bl-[75px] transform transition-all">
+                        class="banner-img w-[82%] 2xl:w-3/4 xl:w-10/12 lg:w-11/12 md:w-full sm:w-3/6 h-auto rounded-br-[75px] rounded-tr-[75px] rounded-bl-[75px] transform transition-all">
                 </div>
                 <div class="md:w-2/3 flex items-center justify-center md:justify-start pl-0 md:pl-8 xl:pl-0">
                     <div class="text-black text-center md:text-left z-10 w-[100%] 2xl:w-[72%]">
@@ -114,7 +117,8 @@
                             <div class="h-px w-10 bg-customGold mt-4 ml-2"></div>
                         </h3>
 
-                        <h2 class="2xl:text-[40px] xl:text-[33px] lg:text-[26px] md:text-[24px] sm:text-[26px] text-[26px] text-start font-bold text-white mt-2 leading-auto">
+                        <h2
+                            class="2xl:text-[40px] xl:text-[33px] lg:text-[26px] md:text-[24px] sm:text-[26px] text-[26px] text-start font-bold text-white mt-2 leading-auto">
                             Make Your Look Even More
                             <span class="text-customGold">Perfect</span>
                             With Our Treatments
@@ -142,37 +146,31 @@
         </section>
 
         <section class="pb-16 pt-12 relative">
-            <!-- Container for flex layout -->
-            <div class="flex flex-col flex-col-reverse md:flex-row w-[90%] lg:w-[80%] mx-auto gap-6">
-                <!-- Left Column - Text Block -->
-                <div class="w-full md:w-1/2 flex items-center justify-center md:justify-start relative">
-                    <!-- <div
-                        class="absolute bottom-[92%] right-[10%] sm:bottom-[60%] sm:right-[50%] md:bottom-[50%] md:right-[48%] lg:bottom-[40%] lg:right-[45%] h-20 w-20 z-20 rotate-90">
-                        <img src="./images/fasion-img-2.png" alt="fasion-img-2">
-                    </div> -->
-                    <div class="text-black text-center md:text-left z-10 w-[100%] 2xl:w-[89%] 2xl:w-[100%]">
-                        <h3 class="text-customGold flex">About US <div class="h-px w-10 bg-customGold mt-4 ml-2"></div>
+            <div class="flex flex-col flex-col-reverse md:flex-row w-[90%] lg:w-[80%] mx-auto gap-4">
+                <!-- Content Section -->
+                <div class="w-full md:w-3/5 flex items- justify-center md:justify-start">
+                    <div class="text-black text-center md:text-left z-10 w-full 2xl:w-[90%]">
+                        <h3 class="text-customGold flex">About Us
+                            <div class="h-px w-10 bg-customGold mt-4 ml-2"></div>
                         </h3>
-                        <h2 class="text-3xl text-start font-semibold">
+                        <h2 class="text-4xl text-start font-semibold">
                             What Customer Says
                             <br>
                             <span class="text-customGold">About Us</span>
                         </h2>
-                        <p class="mt-1 text-sm sm:text-base md:text-sm lg:text-sm xl:text-lg text-[#7A7A7A] text-start">
+                        <p class="mt-1 text-sm sm:text-base md:text-xs lg:text-sm xl:text-base text-[#7A7A7A] text-start">
                             Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has
                             been the
                             industry's standard dummy text ever since the 1500s, when an unknown printer took a galley
                             of type and scrambled it to make a type specimen book.
                         </p>
-                        <p
-                            class="mt-1 text-sm sm:text-base md:text-sm lg:text-sm xl:text-base text-[#7A7A7A] text-start">
+                        <p class="mt-1 text-sm sm:text-base md:text-xs lg:text-sm xl:text-base text-[#7A7A7A] text-start">
                             Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has
                             been the
                             industry's standard dummy text ever since the 1500s, when an unknown printer took a galley
                             of type and scrambled it to make a type specimen book.
                         </p>
-                        <p
-                            class="mt-1 text-sm sm:text-base md:text-sm lg:text-sm xl:text-base text-[#7A7A7A] text-start">
+                        <p class="mt-1 text-sm sm:text-base md:text-xs lg:text-sm xl:text-base text-[#7A7A7A] text-start">
                             Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has
                             been the
                             industry's standard dummy text ever since the 1500s, when an unknown printer took a galley
@@ -188,15 +186,18 @@
                     </div>
                 </div>
 
-                <!-- Right Column - Image Block -->
-                <div class="w-full md:w-1/2 flex items-center justify-end z-20">
-                    <img src="./images/fasion-img-1.png" alt="Fashion Image"
-                        class="w-full max-w-[577px] max-h-[523px] h-auto object-cover object-top rounded-br-[250px] transform transition-all duration-300">
+                <!-- Image Section -->
+                <div class="w-full md:w-2/5 flex items-center justify-end z-20">
+                    <div class="w-full h-auto flex sm:justify-start md:justify-end">
+                        <img src="./images/fasion-img-1.png" alt="Fashion Image" class="img-au 2xl:w-11/12 xl:w-full lg:w-full md:w-full sm:w-9/12 object-cover object-top rounded-br-[250px] transform transition-all duration-300 w-full 
+                            h-[400px]   sm:h-[450px] md:h-[400px] lg:h-[450px] xl:h-[525px]">
+                    </div>
                 </div>
-                <!-- Decorative Background Block -->
-                <div class="bg-[#DABE8080] absolute top-0 right-0 rounded-bl-[254px] z-0 
-                    w-[85%] sm:w-[72%] md:w-[40%] lg:w-[40%] xl:w-[41%] 2xl:w-[38%] 
-                    h-[48%] sm:h-[58%] md:h-[88%] lg:h-[90%] xl:h-[93%] 2xl:h-[94%]">
+
+                <!-- Decorative Background Shape -->
+                <div class="bg-[#DABE8080] absolute top-0 right-0 rounded-bl-[200px] z-0 
+                            w-[82%] sm:w-[72%] md:w-[35%] lg:w-[35%] xl:w-[35%] 2xl:w-[33%] 
+                            h-[43%] sm:h-[52%] md:h-[87%] lg:h-[90%] xl:h-[93%] 2xl:h-[95%]">
                 </div>
             </div>
         </section>
@@ -221,7 +222,7 @@
                         </p>
                         <div class="flex justify-center mt-6">
                             <button
-                                class="px-5 py-2 text-[#2B2B2B] border border-customGold rounded-md bg-[#E9DCBD] hover:bg-customGold hover:text-[#273D32] transition duration-300">
+                                class="px-5 py-2 text-[#2B2B2B] border border-customGold rounded-md bg-[#E9DCBD] hover:bg-[#273D32] hover:text-white transition duration-300">
                                 Book Appointment
                                 <i class="fa-solid fa-mars-stroke-right"></i>
                             </button>
@@ -387,7 +388,7 @@
                 if (loadingScreen) {
                     loadingScreen.style.display = 'none';
                 }
-            },);
+            }, 3000);
         };
     </script>
 </body>
