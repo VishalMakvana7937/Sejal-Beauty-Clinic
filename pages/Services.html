@@ -4,7 +4,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Responsive Header</title>
+    <!-- Favicon for browser tab -->
+    <link rel="icon" href="../images/web-logo.png" type="image/x-icon">
+
+    <title>Sejals Beauty Clinic</title>
     <!-- Style css -->
     <link rel="stylesheet" href="../css/style.css">
 
@@ -54,7 +57,9 @@
     <header class="bg-[#273D32] fixed top-0 left-0 right-0 z-40">
         <nav class="flex justify-between items-center py-2 w-[90%] lg:w-[90%] mx-auto relative">
             <div>
-                <img class="w-22 h-12" src="../images/web-logo.png" alt="web-logo">
+                <a href="../index.html">
+                    <img class="w-22 h-12" src="../images/web-logo.png" alt="web-logo">
+                </a>
             </div>
             <div class="lg:flex hidden gap-6 items-center">
                 <ul class="flex space-x-8">
@@ -100,35 +105,46 @@
     <main class="">
 
         <section class="pt-24 pb-8 bg-[#273D32] relative">
-            <div class="flex flex-col md:flex-row w-[90%] lg:w-[80%] mx-auto py-20">
-                <div class="text-center w-full">
-                    <h1 class="text-white text-5xl font-bold">Services</h1>
-                    <div class="w-full flex justify-center mt-4">
+            <div class="flex flex-col md:flex-row w-[90%] lg:w-[80%] mx-auto pb-28 sm:mt-28">
+                <div class="text-start sm:text-center w-full mb-20">
+                    <h1 class="text-white text-3xl sm:text-6xl font-bold">Services</h1>
+                    <div class="w-full flex justify-start sm:justify-center mt-4">
                         <div class="h-px w-40 bg-customGold"></div>
                     </div>
                 </div>
             </div>
-            <!-- <div class="absolute top-[50%] left-0">
-                <img class="w-full max-w-[269px] md:w-3/4 max-h-[456px] h-auto" style="transform: rotate(75deg);"
-                    src="../images/tree-1.png" alt="tree-1">
+
+            <div class="relative">
+                <img class="absolute 2xl:bottom-[-125px] 2xl:left-[0%] 2xl:w-[244px] 
+                                    xl:bottom-[-122px] xl:left-[0%] xl:w-[234px]
+                                    lg:bottom-[-118px] lg:left-[0%] lg:w-[219px]
+                                    md:bottom-[-111px] md:left-[0%] md:w-[199px]
+                                    sm:bottom-[-104px] sm:left-[0%] sm:w-[179px]
+                                    bottom-[-80px] left-[-14%] w-[154px] h-auto opacity-50" src="../images/tree-1.png"
+                    style="transform: rotate(60deg);" alt="tree-1">
             </div>
-            <div class="absolute top-[0%] left-[70%]">
-                <img class="w-full max-w-[429px] md:w-3/4 max-h-[499px] h-auto" src="../images/fasion-girl.png"
-                    alt="fasion-girl">
-            </div> -->
+            <div class="relative">
+                <img class="absolute 2xl:bottom-[-32px] 2xl:left-[70%] 2xl:w-[294px] 
+                                    xl:bottom-[-32px] xl:left-[70%] xl:w-[284px]
+                                    lg:bottom-[-32px] lg:left-[70%] lg:w-[264px]
+                                    md:bottom-[-32px] md:left-[65%] md:w-[244px]
+                                    sm:bottom-[-32px] sm:left-[65%] sm:w-[224px]
+                                    bottom-[-32px] left-[42%] w-[184px]
+                                    h-auto" src="../images/fasion-girl.png" alt="fashion-girl">
+            </div>
         </section>
 
         <section class="mt-16 mb-16">
-            <h2 class="text-4xl text-center font-semibold mb-6">
+            <h2 class="text-3xl sm:text-4xl text-center font-bold mb-8">
                 What
                 <span class="text-customGold">We Do.....</span>
             </h2>
             <div class="flex flex-col md:flex-row w-[90%] lg:w-[80%] mx-auto">
-                <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
 
                     <div class="flex flex-col items-center bg-white shadow-lg rounded-lg">
-                        <img class="w-full max-h-[367.13px] rounded" src="../images/beauty-img-3.png"
-                            alt="beauty-img-3">
+                        <img class="w-full sm:max-h-[367.13px] md:max-h-auto lg:max-h-auto xl:max-h-auto 2xl:max-h-auto rounded-lg"
+                            src="../images/beauty-img-3.png" alt="beauty-img-3">
                         <div class="p-6">
                             <h2 class="text-2xl">Bridal</h2>
                             <p class="mt-1 text-sm text-[#717171]">
@@ -140,8 +156,8 @@
                         </div>
                     </div>
                     <div class="flex flex-col items-center bg-white shadow-lg rounded-lg">
-                        <img class="w-full max-h-[367.13px] rounded" src="../images/beauty-img-4.png"
-                            alt="beauty-img-4">
+                        <img class="w-full sm:max-h-[367.13px] md:max-h-auto lg:max-h-auto xl:max-h-auto 2xl:max-h-auto rounded-lg"
+                            src="../images/beauty-img-4.png" alt="beauty-img-4">
                         <div class="p-6">
                             <h2 class="text-2xl">Hairdresser Services</h2>
                             <p class="mt-1 text-sm text-[#717171]">
@@ -153,8 +169,8 @@
                         </div>
                     </div>
                     <div class="flex flex-col items-center bg-white shadow-lg rounded-lg">
-                        <img class="w-full max-h-[367.13px] rounded" src="../images/beauty-img-5.png"
-                            alt="beauty-img-5">
+                        <img class="w-full sm:max-h-[367.13px] md:max-h-auto lg:max-h-auto xl:max-h-auto 2xl:max-h-auto rounded-lg"
+                            src="../images/beauty-img-5.png" alt="beauty-img-5">
                         <div class="p-6">
                             <h2 class="text-2xl">Hand $ Feets</h2>
                             <p class="mt-1 text-sm text-[#717171]">
@@ -166,8 +182,8 @@
                         </div>
                     </div>
                     <div class="flex flex-col items-center bg-white shadow-lg rounded-lg">
-                        <img class="w-full max-h-[367.13px] rounded" src="../images/beauty-img-6.png"
-                            alt="beauty-img-6">
+                        <img class="w-full sm:max-h-[367.13px] md:max-h-auto lg:max-h-auto xl:max-h-auto 2xl:max-h-auto rounded-lg"
+                            src="../images/beauty-img-6.png" alt="beauty-img-6">
                         <div class="p-6">
                             <h2 class="text-2xl">Treament</h2>
                             <p class="mt-1 text-sm text-[#717171]">
@@ -179,8 +195,8 @@
                         </div>
                     </div>
                     <div class="flex flex-col items-center bg-white shadow-lg rounded-lg">
-                        <img class="w-full max-h-[367.13px] rounded" src="../images/beauty-img-7.png"
-                            alt="beauty-img-7">
+                        <img class="w-full sm:max-h-[367.13px] md:max-h-auto lg:max-h-auto xl:max-h-auto 2xl:max-h-auto rounded-lg"
+                            src="../images/beauty-img-7.png" alt="beauty-img-7">
                         <div class="p-6">
                             <h2 class="text-2xl">Spa</h2>
                             <p class="mt-1 text-sm text-[#717171]">
@@ -192,8 +208,8 @@
                         </div>
                     </div>
                     <div class="flex flex-col items-center bg-white shadow-lg rounded-lg">
-                        <img class="w-full max-h-[367.13px] rounded" src="../images/beauty-img-8.png"
-                            alt="beauty-img-8">
+                        <img class="w-full sm:max-h-[294.88px] md:max-h-auto lg:max-h-[172.19px] xl:max-h-[218.89px] 2xl:max-h-[295.59px] rounded-lg"
+                            src="../images/beauty-img-8.png" alt="beauty-img-8">
                         <div class="p-6">
                             <h2 class="text-2xl">Treatment</h2>
                             <p class="mt-1 text-sm text-[#717171]">
@@ -218,7 +234,7 @@
             <div
                 class="flex w-[88%] pt-6 pb-6 md:p-12 lg:p-18 mx-auto relative z-10 flex sm:justify-center lg:justify-start">
                 <div class="bg-white w-full max-w-xl border rounded-md py-14 px-7">
-                    <h2 class="text-3xl text-center font-semibold">
+                    <h2 class="text-3xl sm:text-4xl text-center font-bold">
                         Book An
                         <span class="text-customGold px-2">Appointment</span>
                     </h2>
@@ -264,39 +280,48 @@
 
         <section class="mb-16">
             <div class="w-[90%] lg:w-[80%] mx-auto relative">
-              <!-- Slider Section -->
-              <div class="slider">
-                <div class="slider-item mx-4">
-                  <img src="../images/b1.png" alt="b1" class="w-full h-52 object-cover rounded-md shadow-lg object-top">
+                <h2 class="text-3xl sm:text-4xl text-center font-bold mb-8">
+                    Stylish and <span class="text-customGold">Elegant Look</span>
+                </h2>
+                <div class="slider">
+                    <div class="slider-item mx-4">
+                        <img src="../images/b1.png" alt="b1"
+                            class="w-full h-60 object-cover rounded-md shadow-lg object-top">
+                    </div>
+                    <div class="slider-item mx-4">
+                        <img src="../images/b2.png" alt="b2"
+                            class="w-full h-60 object-cover rounded-md shadow-lg object-top">
+                    </div>
+                    <div class="slider-item mx-4">
+                        <img src="../images/b3.png" alt="b3"
+                            class="w-full h-60 object-cover rounded-md shadow-lg object-top">
+                    </div>
+                    <div class="slider-item mx-4">
+                        <img src="../images/b4.png" alt="b4"
+                            class="w-full h-60 object-cover rounded-md shadow-lg object-top">
+                    </div>
+                    <div class="slider-item mx-4">
+                        <img src="../images/b2.png" alt="b2"
+                            class="w-full h-60 object-cover rounded-md shadow-lg object-top">
+                    </div>
+                    <div class="slider-item mx-4">
+                        <img src="../images/b3.png" alt="b3"
+                            class="w-full h-60 object-cover rounded-md shadow-lg object-top">
+                    </div>
                 </div>
-                <div class="slider-item mx-4">
-                  <img src="../images/b2.png" alt="b2" class="w-full h-52 object-cover rounded-md shadow-lg object-top">
-                </div>
-                <div class="slider-item mx-4">
-                  <img src="../images/b3.png" alt="b3" class="w-full h-52 object-cover rounded-md shadow-lg object-top">
-                </div>
-                <div class="slider-item mx-4">
-                  <img src="../images/b4.png" alt="b4" class="w-full h-52 object-cover rounded-md shadow-lg object-top">
-                </div>
-                <div class="slider-item mx-4">
-                  <img src="../images/b2.png" alt="b2" class="w-full h-52 object-cover rounded-md shadow-lg object-top">
-                </div>
-                <div class="slider-item mx-4">
-                  <img src="../images/b3.png" alt="b3" class="w-full h-52 object-cover rounded-md shadow-lg object-top">
-                </div>
-              </div>
-          
-              <!-- Custom Buttons -->
-              <button
-                class="custom-prev absolute -top-4 right-16 bg-gray-800 text-white rounded-full w-10 h-10 flex items-center justify-center shadow-md hover:bg-gray-600 transition duration-300">
-                <i class="fa-solid fa-caret-left"></i>
-              </button>
-              <button
-                class="custom-next absolute -top-4 right-4 bg-gray-800 text-white rounded-full w-10 h-10 flex items-center justify-center shadow-md hover:bg-gray-600 transition duration-300">
-                <i class="fa-solid fa-caret-right"></i>
-              </button>
+        
+                <!-- Custom Buttons -->
+                <button
+                    class="custom-prev absolute top-[60%] left-0 transform -translate-y-1/2 bg-gray-800 text-white rounded-full w-10 h-10 flex items-center justify-center shadow-md hover:bg-gray-600 transition duration-300">
+                    <i class="fa-solid fa-caret-left"></i>
+                </button>
+                <button
+                    class="custom-next absolute top-[60%] right-0 transform -translate-y-1/2 bg-gray-800 text-white rounded-full w-10 h-10 flex items-center justify-center shadow-md hover:bg-gray-600 transition duration-300">
+                    <i class="fa-solid fa-caret-right"></i>
+                </button>
             </div>
-          </section>
+        </section>
+
     </main>
 
     <footer class="bg-[#E4CB93] pt-12">
@@ -312,7 +337,7 @@
                         </ul>
                     </div>
                     <div class="w-full md:w-3/6 flex items-center justify-start md:justify-start">
-                        <img class="w-full max-w-[65px] max-h-[129  px] h-auto" src="../images/fasion-img-6.png"
+                        <img class="w-full max-w-[65px] max-h-[129px] h-auto" src="../images/fasion-img-6.png"
                             alt="fasion-img-6">
                     </div>
                 </div>
@@ -421,7 +446,7 @@
                     {
                         breakpoint: 1024,
                         settings: {
-                            slidesToShow: 3,
+                            slidesToShow: 2,
                         },
                     },
                     {
