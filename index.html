@@ -27,6 +27,10 @@
     <!-- Animate.css -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
 
+    <!-- Slick Slider CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css" />
+
     <script>
         // Tailwind custom theme colors
         tailwind.config = {
@@ -61,8 +65,7 @@
             </div>
             <div class="lg:flex hidden gap-6 items-center">
                 <ul class="flex space-x-8">
-                    <li><a class="text-customGold"
-                            href="./index.html">Home</a></li>
+                    <li><a class="text-customGold" href="./index.html">Home</a></li>
                     <li><a class="text-white hover:text-customGold transition duration-300"
                             href="./pages/AboutUs.html">About Us</a></li>
                     <li><a class="text-white hover:text-customGold transition duration-300"
@@ -158,12 +161,12 @@
             </div>
         </section>
 
-        <section class="pb-16 pt-12 relative">
-            <div class="flex flex-col flex-col-reverse md:flex-row w-[90%] lg:w-[80%] mx-auto gap-4">
+        <section class="pb-0 lg:pb-8 pt-12 relative">
+            <div class="flex flex-col flex-col-reverse md:flex-row w-[90%] lg:w-[80%] mx-auto gap-4 pb-16 z-20">
                 <!-- Content Section -->
                 <div class="w-full md:w-3/5 flex items- justify-center md:justify-start">
                     <div class="text-black text-center md:text-left z-10 w-full 2xl:w-[90%]">
-                        <h3 class="text-customGold flex">About Us
+                        <h3 class="text-lg text-customGold flex">About Us
                             <div class="h-px w-10 bg-customGold mt-4 ml-2"></div>
                         </h3>
                         <h2 class="text-3xl sm:text-4xl text-start font-bold">
@@ -213,8 +216,16 @@
                 <!-- Decorative Background Shape -->
                 <div class="bg-[#DABE8080] absolute top-0 right-0 rounded-bl-[200px] z-0 
                             w-[82%] sm:w-[72%] md:w-[35%] lg:w-[35%] xl:w-[35%] 2xl:w-[33%] 
-                            h-[43%] sm:h-[52%] md:h-[87%] lg:h-[90%] xl:h-[93%] 2xl:h-[95%]">
+                            h-[43%] sm:h-[52%] md:h-[87%] lg:h-[87%] xl:h-[90%] 2xl:h-[92%]">
                 </div>
+
+
+            </div>
+            <div class="relative hidden lg:block">
+                <img class="absolute 2xl:bottom-[-32px] 2xl:left-[0%] 2xl:w-[244px] 
+                                    xl:bottom-[-50px] xl:left-[0%] xl:w-[209px] 
+                                    lg:bottom-[-60px] lg:left-[0%] lg:w-[189px] 
+                h-auto" src="./images/contat-img-1.png" alt="contat-img-1">
             </div>
         </section>
 
@@ -248,52 +259,269 @@
             </div>
         </section>
 
+        <section class="mb-12 bg-[#273D32] py-14">
+            <div class="w-[90%] lg:w-[80%] mx-auto relative">
+                <div class="ml-3">
+                    <h3 class="text-lg text-customGold flex">Services
+                        <div class="h-px w-10 bg-customGold mt-4 ml-2"></div>
+                    </h3>
+                    <h2 class="text-3xl sm:text-4xl font-bold mb-6 text-white">
+                        Services That We <span class="text-customGold">Offer</span>
+                    </h2>
+                </div>
+                <div class="slider h">
+                    <div class="slider-item mx-4">
+                        <img src="./images/beauty-img-3.png" alt="beauty-img-3"
+                            class="w-full h-60 object-cover rounded-t-lg shadow-lg object-center">
+                        <div class="p-4 bg-white rounded-b-lg">
+                            <h2 class="text-2xl font-semibold">Bridal</h2>
+                            <p class="text-sm text-[#717171] mt-2">
+                                Enhance natural a beauty, stand out with theme-inspired tbridal makeovers from our to
+                                special design service!
+                            </p>
+                            <div class="mt-4 text-start">
+                                <button
+                                    class="px-5 py-2 border border-[#273D32] rounded-md bg-white hover:bg-[#273D32] hover:text-white transition duration-300">
+                                    Read More
+                                    <i class="fa-solid fa-mars-stroke-right"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="slider-item mx-4">
+                        <img src="./images/beauty-img-4.png" alt="beauty-img-4"
+                            class="w-full h-60 object-cover rounded-t-lg shadow-lg object-center">
+                        <div class="p-4 bg-white rounded-b-lg">
+                            <h2 class="text-2xl font-semibold">Hairdresser</h2>
+                            <p class="text-sm text-[#717171] mt-2">
+                                Enhance natural a beauty, stand out with theme-inspired tbridal makeovers from our to
+                                special design service!
+                            </p>
+                            <div class="mt-4 text-start">
+                                <button
+                                    class="px-5 py-2 border border-[#273D32] rounded-md bg-white hover:bg-[#273D32] hover:text-white transition duration-300">
+                                    Read More
+                                    <i class="fa-solid fa-mars-stroke-right"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="slider-item mx-4">
+                        <img src="./images/beauty-img-5.png" alt="beauty-img-5"
+                            class="w-full h-60 object-cover rounded-t-lg shadow-lg object-center">
+                        <div class="p-4 bg-white rounded-b-lg">
+                            <h2 class="text-2xl font-semibold">Hands $ Feets</h2>
+                            <p class="text-sm text-[#717171] mt-2">
+                                Enhance natural a beauty, stand out with theme-inspired tbridal makeovers from our to
+                                special design service!
+                            </p>
+                            <div class="mt-4 text-start">
+                                <button
+                                    class="px-5 py-2 border border-[#273D32] rounded-md bg-white hover:bg-[#273D32] hover:text-white transition duration-300">
+                                    Read More
+                                    <i class="fa-solid fa-mars-stroke-right"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="slider-item mx-4">
+                        <img src="./images/beauty-img-6.png" alt="beauty-img-6"
+                            class="w-full h-60 object-cover rounded-t-lg shadow-lg object-center">
+                        <div class="p-4 bg-white rounded-b-lg">
+                            <h2 class="text-2xl font-semibold">Treament</h2>
+                            <p class="text-sm text-[#717171] mt-2">
+                                Enhance natural a beauty, stand out with theme-inspired tbridal makeovers from our to
+                                special design service!
+                            </p>
+                            <div class="mt-4 text-start">
+                                <button
+                                    class="px-5 py-2 border border-[#273D32] rounded-md bg-white hover:bg-[#273D32] hover:text-white transition duration-300">
+                                    Read More
+                                    <i class="fa-solid fa-mars-stroke-right"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="slider-item mx-4">
+                        <img src="./images/beauty-img-7.png" alt="beauty-img-7"
+                            class="w-full h-60 object-cover rounded-t-lg shadow-lg object-center">
+                        <div class="p-4 bg-white rounded-b-lg">
+                            <h2 class="text-2xl font-semibold">Spa</h2>
+                            <p class="text-sm text-[#717171] mt-2">
+                                Enhance natural a beauty, stand out with theme-inspired tbridal makeovers from our to
+                                special design service!
+                            </p>
+                            <div class="mt-4 text-start">
+                                <button
+                                    class="px-5 py-2 border border-[#273D32] rounded-md bg-white hover:bg-[#273D32] hover:text-white transition duration-300">
+                                    Read More
+                                    <i class="fa-solid fa-mars-stroke-right"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="slider-item mx-4">
+                        <img src="./images/beauty-img-8.png" alt="beauty-img-8"
+                            class="w-full h-60 object-cover rounded-t-lg shadow-lg object-center">
+                        <div class="p-4 bg-white rounded-b-lg">
+                            <h2 class="text-2xl font-semibold">Treatment</h2>
+                            <p class="text-sm text-[#717171] mt-2">
+                                Enhance natural a beauty, stand out with theme-inspired tbridal makeovers from our to
+                                special design service!
+                            </p>
+                            <div class="mt-4 text-start">
+                                <button
+                                    class="px-5 py-2 border border-[#273D32] rounded-md bg-white hover:bg-[#273D32] hover:text-white transition duration-300">
+                                    Read More
+                                    <i class="fa-solid fa-mars-stroke-right"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Custom Buttons -->
+                <button
+                    class="custom-prev absolute top-[60%] left-0 transform -translate-y-1/2 bg-white text-[#273D32] rounded-full w-10 h-10 flex items-center justify-center shadow-md hover:bg-gray-600 transition duration-300">
+                    <i class="fa-solid fa-caret-left"></i>
+                </button>
+                <button
+                    class="custom-next absolute top-[60%] right-0 transform -translate-y-1/2 bg-white text-[#273D32] rounded-full w-10 h-10 flex items-center justify-center shadow-md hover:bg-gray-600 transition duration-300">
+                    <i class="fa-solid fa-caret-right"></i>
+                </button>
+            </div>
+        </section>
+
+        <section class="mb-12 relative">
+            <div class="w-[90%] lg:w-[80%] mx-auto relative">
+                <div class="ml-3">
+                    <h3 class="text-lg text-black flex">
+                        Beauty Tales
+                        <div class="h-px w-10 bg-black mt-4 ml-2"></div>
+                    </h3>
+                    <h2 class="text-3xl sm:text-4xl font-bold mb-6">
+                        Services That We <span class="text-customGold">Offer</span>
+                    </h2>
+                </div>
+                <div class="slider0">
+                    <div class="slider-item mx-4 bg-white">
+                        <div class="p-2 sm:p-4 rounded-lg shadow-md">
+                            <div class="flex w-full">
+                                <div class="w-1/4">
+                                    <img class="w-[180px] h-[180px] object-cover object-center rounded-lg"
+                                        src="./images/b5.png" alt="Service by Valentina">
+                                </div>
+                                <div class="ml-4 w-3/4">
+                                    <h2 class="text-2xl font-semibold">Valentina</h2>
+                                    <p class="text-sm text-[#7A7A7A] mt-2">
+                                        Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                                        Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="slider-item mx-4 bg-white">
+                        <div class="p-2 sm:p-4 rounded-lg shadow-md">
+                            <div class="flex w-full">
+                                <div class="w-1/4">
+                                    <img class="w-[180px] h-[180px] object-cover object-center rounded-lg"
+                                        src="./images/b6.png" alt="Service by Valentina">
+                                </div>
+                                <div class="ml-4 w-3/4">
+                                    <h2 class="text-2xl font-semibold">Inna miru</h2>
+                                    <p class="text-sm text-[#7A7A7A] mt-2">
+                                        Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                                        Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="slider-item mx-4 bg-white">
+                        <div class="p-2 sm:p-4 rounded-lg shadow-md">
+                            <div class="flex w-full">
+                                <div class="w-1/4">
+                                    <img class="w-[180px] h-[180px] object-cover object-center rounded-lg"
+                                        src="./images/b7.png" alt="Service by Valentina">
+                                </div>
+                                <div class="ml-4 w-3/4">
+                                    <h2 class="text-2xl font-semibold">maria seza</h2>
+                                    <p class="text-sm text-[#7A7A7A] mt-2">
+                                        Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                                        Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <button
+                    class="custom-prev absolute top-[65%] left-0 transform -translate-y-1/2 bg-gray-800 text-white rounded-full w-10 h-10 flex items-center justify-center shadow-md hover:bg-gray-600 transition duration-300"
+                    aria-label="Previous Slide">
+                    <i class="fa-solid fa-caret-left"></i>
+                </button>
+                <button
+                    class="custom-next absolute top-[65%] right-0 transform -translate-y-1/2 bg-gray-800 text-white rounded-full w-10 h-10 flex items-center justify-center shadow-md hover:bg-gray-600 transition duration-300"
+                    aria-label="Next Slide">
+                    <i class="fa-solid fa-caret-right"></i>
+                </button>
+            </div>
+            <div class="relative">
+                <img class="absolute 2xl:bottom-[-20px] 2xl:left-[-2%] 2xl:w-[169px] 
+                                    xl:bottom-[10px] xl:left-[-2%] xl:w-[144px] 
+                                    lg:bottom-[10px] lg:left-[-4%] lg:w-[144px] 
+                                    h-auto opacity-50 hidden lg:block" src="./images/tree-1.png"
+                    style="transform: rotate(60deg);" alt="tree-1">
+            </div>
+        </section>
+
         <section class="relative">
             <div class="appointment-booking-bg-img bg-cover bg-center bg-no-repeat relative object-cover object-top">
                 <div class=" absolute inset-0 bg-black opacity-50"></div>
-            <div
-                class="flex w-[88%] pt-6 pb-6 md:p-12 lg:p-18 mx-auto relative z-10 flex sm:justify-center lg:justify-start">
-                <div class="bg-white w-full max-w-xl border rounded-md py-14 px-7">
-                    <h2 class="text-3xl sm:text-4xl text-center font-bold">
-                        Book An
-                        <span class="text-customGold px-2">Appointment</span>
-                    </h2>
-                    <form action="#" class="mt-6">
-                        <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
-                            <div class="form-group w-full">
-                                <input type="text" id="name" name="name" placeholder="Name *"
-                                    class="w-full p-2 border rounded bg-[#F4EFE1CC] border-none" required>
+                <div
+                    class="flex w-[88%] pt-6 pb-6 md:p-12 lg:p-18 mx-auto relative z-10 flex sm:justify-center lg:justify-start">
+                    <div class="bg-white w-full max-w-xl border rounded-md py-14 px-7">
+                        <h2 class="text-3xl sm:text-4xl text-center font-bold">
+                            Book An
+                            <span class="text-customGold px-2">Appointment</span>
+                        </h2>
+                        <form action="#" class="mt-6">
+                            <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                                <div class="form-group w-full">
+                                    <input type="text" id="name" name="name" placeholder="Name *"
+                                        class="w-full p-2 border rounded bg-[#F4EFE1CC] border-none" required>
+                                </div>
+                                <div class="form-group w-full">
+                                    <input type="tel" id="phone" name="phone" placeholder="Phone *"
+                                        class="w-full p-2 border rounded bg-[#F4EFE1CC] border-none" required>
+                                </div>
                             </div>
-                            <div class="form-group w-full">
-                                <input type="tel" id="phone" name="phone" placeholder="Phone *"
-                                    class="w-full p-2 border rounded bg-[#F4EFE1CC] border-none" required>
+                            <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 mt-4">
+                                <div class="form-group w-full">
+                                    <input type="text" id="date" name="date" placeholder="Date *"
+                                        class="w-full p-2 border rounded bg-[#F4EFE1CC] border-none" required>
+                                </div>
+                                <div class="form-group w-full">
+                                    <input type="tel" id="time" name="time" placeholder="Time *"
+                                        class="w-full p-2 border rounded bg-[#F4EFE1CC] border-none" required>
+                                </div>
                             </div>
-                        </div>
-                        <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 mt-4">
-                            <div class="form-group w-full">
-                                <input type="text" id="date" name="date" placeholder="Date *"
-                                    class="w-full p-2 border rounded bg-[#F4EFE1CC] border-none" required>
+                            <div class="form-group w-full mt-4">
+                                <textarea id="service" name="service" placeholder="Service Required *"
+                                    class="w-full p-2 border rounded bg-[#F4EFE1CC] border-none" required></textarea>
                             </div>
-                            <div class="form-group w-full">
-                                <input type="tel" id="time" name="time" placeholder="Time *"
-                                    class="w-full p-2 border rounded bg-[#F4EFE1CC] border-none" required>
+                            <div class="flex justify-center mt-6">
+                                <button
+                                    class="px-5 py-2 text-white border border-customGold rounded-md bg-[#273D32] hover:bg-customGold hover:text-[#273D32] transition duration-300">
+                                    Book Appointment
+                                    <i class="fa-solid fa-mars-stroke-right"></i>
+                                </button>
                             </div>
-                        </div>
-                        <div class="form-group w-full mt-4">
-                            <textarea id="service" name="service" placeholder="Service Required *"
-                                class="w-full p-2 border rounded bg-[#F4EFE1CC] border-none" required></textarea>
-                        </div>
-                        <div class="flex justify-center mt-6">
-                            <button
-                                class="px-5 py-2 text-white border border-customGold rounded-md bg-[#273D32] hover:bg-customGold hover:text-[#273D32] transition duration-300">
-                                Book Appointment
-                                <i class="fa-solid fa-mars-stroke-right"></i>
-                            </button>
-                        </div>
-                    </form>
+                        </form>
+                    </div>
                 </div>
-            </div>
-            <!-- <div class="absolute bottom-0 right-[-15%] z-0 hidden xl:block">
+                <!-- <div class="absolute bottom-0 right-[-15%] z-0 hidden xl:block">
                 <img src="./images/contat-img-1.png" alt="contact-img-1" class="max-w-[40%] h-auto" />
             </div> -->
         </section>
@@ -406,6 +634,90 @@
                 }
             }, 3000);
         };
+    </script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            const $slider = $('.slider');
+            $slider.slick({
+                slidesToShow: 4, // Show 4 images at a time
+                slidesToScroll: 1,
+                autoplay: true,
+                autoplaySpeed: 2000,
+                arrows: false, // Disable default arrows
+                dots: false,
+                responsive: [
+                    {
+                        breakpoint: 1280, // Tailwind's lg breakpoint (1280px)
+                        settings: {
+                            slidesToShow: 3, // Show 3 images for larger screens
+                        },
+                    },
+                    {
+                        breakpoint: 1024, // Tailwind's md breakpoint (1024px)
+                        settings: {
+                            slidesToShow: 2, // Show 2 images for medium screens
+                        },
+                    },
+                    {
+                        breakpoint: 640, // Tailwind's sm breakpoint (640px)
+                        settings: {
+                            slidesToShow: 1, // Show 1 image for small screens
+                        },
+                    },
+                ],
+            });
+
+            // Custom button actions
+            $('.custom-prev').on('click', function () {
+                $slider.slick('slickPrev');
+            });
+            $('.custom-next').on('click', function () {
+                $slider.slick('slickNext');
+            });
+        });
+    </script>
+    <script>
+        $(document).ready(function () {
+            const $slider0 = $('.slider0');
+            $slider0.slick({
+                slidesToShow: 2, // Show 4 images at a time
+                slidesToScroll: 1,
+                // autoplay: true,
+                // autoplaySpeed: 2000,
+                arrows: false, // Disable default arrows
+                dots: false,
+                responsive: [
+                    {
+                        breakpoint: 1280, // Tailwind's lg breakpoint (1280px)
+                        settings: {
+                            slidesToShow: 2, // Show 3 images for larger screens
+                        },
+                    },
+                    {
+                        breakpoint: 1024, // Tailwind's md breakpoint (1024px)
+                        settings: {
+                            slidesToShow: 1, // Show 2 images for medium screens
+                        },
+                    },
+                    {
+                        breakpoint: 640, // Tailwind's sm breakpoint (640px)
+                        settings: {
+                            slidesToShow: 1, // Show 1 image for small screens
+                        },
+                    },
+                ],
+            });
+
+            // Custom button actions
+            $('.custom-prev').on('click', function () {
+                $slider0.slick('slickPrev');
+            });
+            $('.custom-next').on('click', function () {
+                $slider0.slick('slickNext');
+            });
+        });
     </script>
 </body>
 

@@ -52,7 +52,7 @@
     </div>
 
     <header class="bg-[#273D32] fixed top-0 left-0 right-0 z-40">
-        <nav class="flex justify-between items-center py-2 w-[90%] lg:w-[90%] mx-auto relative">
+        <nav class="flex justify-between items-center py-2 w-[90%] lg:w-[90%] mx-auto">
             <div>
                 <a href="../index.html">
                     <img class="w-22 h-12" src="../images/web-logo.png" alt="web-logo">
@@ -132,11 +132,11 @@
             </div>
         </section>
 
-        <section class="my-16">
+        <section class="my-16 relative">
             <div class="flex flex-col flex-col-reverse md:flex-row w-[90%] lg:w-[80%] mx-auto gap-6">
                 <div class="w-full md:w-2/5">
-                    <div class="flex w-full items-center md:items-start md:flex-row gap-6">
-                        <div class="w-full">
+                    <div class="flex w-full items-center md:items-start md:flex-row gap-6 ">
+                        <div class="w-full ">
                             <div
                                 class="flex w-full mb-2 p-3 items-center bg-white shadow-lg rounded-lg border-2 border-solid border-[#273D32]">
                                 <div>
@@ -245,9 +245,16 @@
                     </div>
                 </div>
             </div>
+            <div class="relative">
+                <img class="absolute 2xl:top-[410px] 2xl:left-[20%] 2xl:w-[184px] 
+                                    xl:top-[430px] xl:left-[8%] xl:w-[144px] 
+                                    lg:top-[430px] lg:left-[4%] lg:w-[144px] 
+                                    h-auto opacity-20 hidden lg:block" src="../images/tree-1.png"
+                    style="transform: rotate(-40deg);" alt="tree-1">
+            </div>
         </section>
 
-        <section class="my-16 py-14 bg-[#E4CB9380] bg-cover bg-center bg-no-repeat opacity-100 relative">
+        <section class="my-16 py-14 bg-[#E4CB9380] bg-cover bg-center bg-no-repeat opacity-100 ">
             <div class="back-design-img absolute inset-0 opacity-[2%]"></div>
             <div class="flex flex-col-reverse md:flex-row w-[90%] lg:w-[80%] mx-auto gap-6">
                 <!-- Left Section: Image and Content -->
@@ -446,7 +453,7 @@
                 if (loadingScreen) {
                     loadingScreen.style.display = 'none';
                 }
-            }, 3000);
+            },);
         };
     </script>
 
