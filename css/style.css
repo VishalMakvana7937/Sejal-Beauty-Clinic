@@ -73,6 +73,18 @@ body {
   background: linear-gradient(90deg, black 20%, rgba(0, 0, 0, 0) 63.1%);
 }
 
+.gradient-border {
+  border: 5px solid transparent;
+  border-image-source: linear-gradient(359.08deg, #273D32 20%, rgba(58, 182, 120, 0) 91.1%);
+  border-image-slice: 1;
+}
+
+.gradient-border-0 {
+  border: 5px solid transparent;
+  border-image-source: linear-gradient(270deg, #273D32 20%, rgba(58, 182, 120, 0) 91.1%);
+  border-image-slice: 1;
+}
+
 .slick-prev,
 .slick-next {
   display: none !important;
