@@ -298,7 +298,7 @@
             </div>
         </section>
 
-        <section class="mb-16 relative">
+        <section class="mb-16 relative overflow-hidden">
             <div class="w-[90%] lg:w-[80%] mx-auto relative">
                 <h2 class="text-3xl sm:text-4xl text-center font-bold mb-8">
                     Stylish and <span class="text-customGold">Elegant Look</span>
@@ -329,7 +329,6 @@
                             class="w-full h-60 object-cover rounded-md shadow-lg object-top">
                     </div>
                 </div>
-
                 <!-- Custom Buttons -->
                 <button
                     class="custom-prev absolute top-[60%] left-0 transform -translate-y-1/2 bg-gray-800 text-white rounded-full w-10 h-10 flex items-center justify-center shadow-md hover:bg-gray-600 transition duration-300">
@@ -341,13 +340,14 @@
                 </button>
             </div>
             <div class="relative">
-                <img class="absolute 2xl:bottom-[-80px] 2xl:left-[-4%] 2xl:w-[169px] 
-                                    xl:bottom-[-70px] xl:left-[-4%] xl:w-[144px] 
-                                    lg:bottom-[-70px] lg:left-[-6%] lg:w-[144px] 
-                                    h-auto opacity-20 hidden lg:block" src="../images/tree-1.png"
-                    style="transform: rotate(60deg);" alt="tree-1">
+                <img class="absolute 2xl:bottom-[-30px] 2xl:left-[93%] 2xl:w-[169px] 
+                            xl:bottom-[-30px] xl:left-[93%] xl:w-[144px] 
+                            lg:bottom-[-30px] lg:left-[92%] lg:w-[144px] 
+                            h-auto opacity-20 hidden lg:block" src="../images/tree-1.png" alt="tree-1"
+                    style="transform: rotate(-40deg) scaleX(-1); z-index: 1;">
             </div>
         </section>
+
 
     </main>
 
@@ -454,7 +454,7 @@
                 if (loadingScreen) {
                     loadingScreen.style.display = 'none';
                 }
-            }, 3000);
+            },);
         };
     </script>
 
