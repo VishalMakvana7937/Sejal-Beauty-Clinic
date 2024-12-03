@@ -6,9 +6,31 @@
   border-bottom: 2px solid #dabe80;
 }
 
+/* Wrapper for background image */
+.appointment-booking-bg-img-wrapper {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+    transform: scaleX(-1);
+}
 .appointment-booking-bg-img {
-  background-image: url('../images/contat-img.png');
-  background-position: left center !important;
+    background-image: url('../images/contat-img.png');
+    background-position: left center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100%; 
+}
+.appointment-booking-bg-img-wrapper::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5); 
 }
 
 body {

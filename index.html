@@ -229,7 +229,7 @@
 
             </div>
             <div class="relative hidden lg:block">
-                <img class="absolute 2xl:bottom-[-32px] 2xl:left-[0%] 2xl:w-[244px] 
+                <img class="absolute 2xl:bottom-[-32px] 2xl:left-[0%] 2xl:w-[224px] 
                                     xl:bottom-[-50px] xl:left-[0%] xl:w-[209px] 
                                     lg:bottom-[-60px] lg:left-[0%] lg:w-[189px] 
                 h-auto" src="./images/contat-img-1.png" alt="contat-img-1">
@@ -565,53 +565,58 @@
         </section>
 
         <section class="relative">
-            <div class="appointment-booking-bg-img bg-cover bg-center bg-no-repeat relative object-cover object-top">
-                <div class=" absolute inset-0 bg-black opacity-50"></div>
-                <div
-                    class="flex w-[88%] pt-6 pb-6 md:p-12 lg:p-18 mx-auto relative z-10 flex sm:justify-center lg:justify-start">
-                    <div class="bg-white w-full max-w-xl border rounded-md py-14 px-7">
-                        <h2 class="text-3xl sm:text-4xl text-center font-bold">
-                            Book An
-                            <span class="text-customGold px-2">Appointment</span>
-                        </h2>
-                        <form action="#" class="mt-6">
-                            <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
-                                <div class="form-group w-full">
-                                    <input type="text" id="name" name="name" placeholder="Name *"
-                                        class="w-full p-2 border rounded bg-[#F4EFE1CC] border-none" required>
-                                </div>
-                                <div class="form-group w-full">
-                                    <input type="tel" id="phone" name="phone" placeholder="Phone *"
-                                        class="w-full p-2 border rounded bg-[#F4EFE1CC] border-none" required>
-                                </div>
+            <div class="appointment-booking-bg-img-wrapper">
+                <div class="appointment-booking-bg-img"></div>
+            </div>
+
+            <div
+                class="flex w-[88%] pt-6 pb-6 md:p-12 lg:p-18 mx-auto relative z-10 flex sm:justify-center lg:justify-end">
+                <div class="bg-white w-full max-w-xl border rounded-md py-14 px-7">
+                    <h2 class="text-3xl sm:text-4xl text-center font-bold">
+                        Book An
+                        <span class="text-customGold px-2">Appointment</span>
+                    </h2>
+                    <form action="#" class="mt-6">
+                        <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                            <div class="form-group w-full">
+                                <input type="text" id="name" name="name" placeholder="Name *"
+                                    class="w-full p-2 border rounded bg-[#F4EFE1CC] border-none" required>
                             </div>
-                            <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 mt-4">
-                                <div class="form-group w-full">
-                                    <input type="text" id="date" name="date" placeholder="Date *"
-                                        class="w-full p-2 border rounded bg-[#F4EFE1CC] border-none" required>
-                                </div>
-                                <div class="form-group w-full">
-                                    <input type="tel" id="time" name="time" placeholder="Time *"
-                                        class="w-full p-2 border rounded bg-[#F4EFE1CC] border-none" required>
-                                </div>
+                            <div class="form-group w-full">
+                                <input type="tel" id="phone" name="phone" placeholder="Phone *"
+                                    class="w-full p-2 border rounded bg-[#F4EFE1CC] border-none" required>
                             </div>
-                            <div class="form-group w-full mt-4">
-                                <textarea id="service" name="service" placeholder="Service Required *"
-                                    class="w-full p-2 border rounded bg-[#F4EFE1CC] border-none" required></textarea>
+                        </div>
+                        <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 mt-4">
+                            <div class="form-group w-full">
+                                <input type="text" id="date" name="date" placeholder="Date *"
+                                    class="w-full p-2 border rounded bg-[#F4EFE1CC] border-none" required>
                             </div>
-                            <div class="flex justify-center mt-6">
-                                <button
-                                    class="px-5 py-2 text-white border border-customGold rounded-md bg-[#273D32] hover:bg-customGold hover:text-[#273D32] transition duration-300">
-                                    Book Appointment
-                                    <i class="fa-solid fa-mars-stroke-right"></i>
-                                </button>
+                            <div class="form-group w-full">
+                                <input type="tel" id="time" name="time" placeholder="Time *"
+                                    class="w-full p-2 border rounded bg-[#F4EFE1CC] border-none" required>
                             </div>
-                        </form>
-                    </div>
+                        </div>
+                        <div class="form-group w-full mt-4">
+                            <textarea id="service" name="service" placeholder="Service Required *"
+                                class="w-full p-2 border rounded bg-[#F4EFE1CC] border-none" required></textarea>
+                        </div>
+                        <div class="flex justify-center mt-6">
+                            <button
+                                class="px-5 py-2 text-white border border-customGold rounded-md bg-[#273D32] hover:bg-customGold hover:text-[#273D32] transition duration-300">
+                                Book Appointment
+                                <i class="fa-solid fa-mars-stroke-right"></i>
+                            </button>
+                        </div>
+                    </form>
                 </div>
-                <!-- <div class="absolute bottom-0 right-[-15%] z-0 hidden xl:block">
-                <img src="./images/contat-img-1.png" alt="contact-img-1" class="max-w-[40%] h-auto" />
-            </div> -->
+            </div>
+            <div class="relative hidden lg:block">
+                <img class="absolute 2xl:bottom-[0px] 2xl:left-[4%] 2xl:w-[244px] 
+                                            xl:bottom-[0px] xl:left-[3%] xl:w-[209px] 
+                                            lg:bottom-[0px] lg:left-[3%] lg:w-[189px] 
+                        h-auto" src="./images/contat-img-1.png" alt="contat-img-1">
+            </div>
         </section>
 
     </main>
