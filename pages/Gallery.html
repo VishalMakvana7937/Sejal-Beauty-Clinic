@@ -26,6 +26,10 @@
     <!-- Animate.css -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
 
+    <!-- Slick Slider CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css" />
+
     <script>
         // Tailwind custom theme colors
         tailwind.config = {
@@ -143,79 +147,150 @@
         </section>
 
         <section class="mt-12">
-            <div class="w-[90%] lg:w-[80%] mx-auto">
-                <h2 class="text-3xl sm:text-4xl font-bold mb-6 mt-6">Makeup</h2>
-                <div class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-4">
-                    <div class="relative group overflow-hidden rounded-lg">
-                        <img class="w-full h-[300px] object-cover object-center" src="../images/s8.png"
-                            alt="Engagement">
-                        <div
-                            class="absolute inset-0 bg-[#687674] bg-opacity-50 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-                            <span class="text-white text-lg font-bold">Engagement</span>
+            <!-- img gallery 1 -->
+            <div class="w-[90%] lg:w-[80%] mx-auto relative">
+                <div class="mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2">
+                    <div>
+                        <h2 class="text-3xl sm:text-4xl font-bold mb-6 ml-3">Makeup</h2>
+                    </div>
+                    <div class="flex justify-end items-center">
+                        <button
+                            class="custom-prev absolute top-0 right-16 mb-6 transform bg-white text-[#273D32] rounded-full w-10 h-10 flex items-center justify-center shadow-md hover:bg-gray-600 transition duration-300">
+                            <img src="../images/slide-img-1.png" alt="slide-img-1">
+                        </button>
+                        <button
+                            class="custom-next absolute top-0 right-4 mb-6 transform bg-white text-[#273D32] rounded-full w-10 h-10 flex items-center justify-center shadow-md hover:bg-gray-600 transition duration-300">
+                            <img src="../images/slide-img-2.png" alt="slide-img-2">
+                        </button>
+                    </div>
+                </div>
+                <div class="slider h">
+                    <div class="slider-item mx-4">
+                        <div class="relative group overflow-hidden rounded-lg">
+                            <img class="w-full h-[300px] object-cover object-center" src="../images/s8.png"
+                                alt="Engagement">
+                            <div
+                                class="absolute inset-0 bg-[#687674] bg-opacity-50 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                                <span class="text-white text-lg font-bold">Engagement</span>
+                            </div>
                         </div>
                     </div>
-                    <div class="relative group overflow-hidden rounded-lg">
-                        <img class="w-full h-[300px] object-cover object-center" src="../images/s1.png"
-                            alt="Engagement">
-                        <div
-                            class="absolute inset-0 bg-[#687674] bg-opacity-50 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-                            <span class="text-white text-lg font-bold">Engagement</span>
+                    <div class="slider-item mx-4">
+                        <div class="relative group overflow-hidden rounded-lg">
+                            <img class="w-full h-[300px] object-cover object-center" src="../images/s1.png"
+                                alt="Engagement">
+                            <div
+                                class="absolute inset-0 bg-[#687674] bg-opacity-50 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                                <span class="text-white text-lg font-bold">Engagement</span>
+                            </div>
                         </div>
                     </div>
-                    <div class="relative group overflow-hidden rounded-lg">
-                        <img class="w-full h-[300px] object-cover object-center" src="../images/s2.png"
-                            alt="Engagement">
-                        <div
-                            class="absolute inset-0 bg-[#687674] bg-opacity-50 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-                            <span class="text-white text-lg font-bold">Engagement</span>
+                    <div class="slider-item mx-4">
+                        <div class="relative group overflow-hidden rounded-lg">
+                            <img class="w-full h-[300px] object-cover object-center" src="../images/s2.png"
+                                alt="Engagement">
+                            <div
+                                class="absolute inset-0 bg-[#687674] bg-opacity-50 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                                <span class="text-white text-lg font-bold">Engagement</span>
+                            </div>
                         </div>
                     </div>
-                    <div class="relative group overflow-hidden rounded-lg">
-                        <img class="w-full h-[300px] object-cover object-center" src="../images/s3.png"
-                            alt="Engagement">
-                        <div
-                            class="absolute inset-0 bg-[#687674] bg-opacity-50 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-                            <span class="text-white text-lg font-bold">Engagement</span>
+                    <div class="slider-item mx-4">
+                        <div class="relative group overflow-hidden rounded-lg">
+                            <img class="w-full h-[300px] object-cover object-center" src="../images/s3.png"
+                                alt="Engagement">
+                            <div
+                                class="absolute inset-0 bg-[#687674] bg-opacity-50 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                                <span class="text-white text-lg font-bold">Engagement</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="slider-item mx-4">
+                        <div class="relative group overflow-hidden rounded-lg">
+                            <img class="w-full h-[300px] object-cover object-center" src="../images/s2.png"
+                                alt="Engagement">
+                            <div
+                                class="absolute inset-0 bg-[#687674] bg-opacity-50 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                                <span class="text-white text-lg font-bold">Engagement</span>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="w-[90%] lg:w-[80%] mx-auto">
-                <h2 class="text-3xl sm:text-4xl font-bold mb-6 mt-6">Hairstyle</h2>
-                <div class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-4">
-                    <div class="relative group overflow-hidden rounded-lg">
-                        <img class="w-full h-[300px] object-cover object-center" src="../images/s4.png" alt="Pony Tail">
-                        <div
-                            class="absolute inset-0 bg-[#687674] bg-opacity-50 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-                            <span class="text-white text-lg font-bold">Pony Tail</span>
+            <!-- img gallery 2 -->
+            <div class="w-[90%] lg:w-[80%] mx-auto relative">
+                <div class="mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2">
+                    <div>
+                        <h2 class="text-3xl sm:text-4xl font-bold mb-6 mt-6 ml-3">Hairstyle</h2>
+                    </div>
+                    <div class="flex justify-end items-center">
+                        <button
+                            class="custom-prev absolute top-0 right-16 mb-6 mt-6 transform bg-white text-[#273D32] rounded-full w-10 h-10 flex items-center justify-center shadow-md hover:bg-gray-600 transition duration-300">
+                            <img src="../images/slide-img-1.png" alt="slide-img-1">
+                        </button>
+                        <button
+                            class="custom-next absolute top-0 right-4 mb-6 mt-6 transform bg-white text-[#273D32] rounded-full w-10 h-10 flex items-center justify-center shadow-md hover:bg-gray-600 transition duration-300">
+                            <img src="../images/slide-img-2.png" alt="slide-img-2">
+                        </button>
+                    </div>
+                </div>
+                <div class="slider h">
+                    <div class="slider-item mx-4">
+                        <div class="relative group overflow-hidden rounded-lg">
+                            <img class="w-full h-[300px] object-cover object-center" src="../images/s5.png"
+                                alt="Pony Tail ">
+                            <div
+                                class="absolute inset-0 bg-[#687674] bg-opacity-50 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                                <span class="text-white text-lg font-bold">Pony Tail</span>
+                            </div>
                         </div>
                     </div>
-                    <div class="relative group overflow-hidden rounded-lg">
-                        <img class="w-full h-[300px] object-cover object-center" src="../images/s5.png"
-                            alt="Pony Tail ">
-                        <div
-                            class="absolute inset-0 bg-[#687674] bg-opacity-50 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-                            <span class="text-white text-lg font-bold">Pony Tail</span>
+                    <div class="slider-item mx-4">
+                        <div class="relative group overflow-hidden rounded-lg">
+                            <img class="w-full h-[300px] object-cover object-center" src="../images/s6.png"
+                                alt="Pony Tail ">
+                            <div
+                                class="absolute inset-0 bg-[#687674] bg-opacity-50 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                                <span class="text-white text-lg font-bold">Pony Tail</span>
+                            </div>
                         </div>
                     </div>
-                    <div class="relative group overflow-hidden rounded-lg">
-                        <img class="w-full h-[300px] object-cover object-center" src="../images/s6.png"
-                            alt="Pony Tail ">
-                        <div
-                            class="absolute inset-0 bg-[#687674] bg-opacity-50 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-                            <span class="text-white text-lg font-bold">Pony Tail</span>
+                    <div class="slider-item mx-4">
+                        <div class="relative group overflow-hidden rounded-lg">
+                            <img class="w-full h-[300px] object-cover object-center" src="../images/s7.png"
+                                alt="Pony Tail ">
+                            <div
+                                class="absolute inset-0 bg-[#687674] bg-opacity-50 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                                <span class="text-white text-lg font-bold">Pony Tail</span>
+                            </div>
                         </div>
                     </div>
-                    <div class="relative group overflow-hidden rounded-lg">
-                        <img class="w-full h-[300px] object-cover object-center" src="../images/s7.png"
-                            alt="Pony Tail ">
-                        <div
-                            class="absolute inset-0 bg-[#687674] bg-opacity-50 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-                            <span class="text-white text-lg font-bold">Pony Tail</span>
+                    <div class="slider-item mx-4">
+                        <div class="relative group overflow-hidden rounded-lg">
+                            <img class="w-full h-[300px] object-cover object-center" src="../images/s8.png"
+                                alt="Engagement">
+                            <div
+                                class="absolute inset-0 bg-[#687674] bg-opacity-50 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                                <span class="text-white text-lg font-bold">Engagement</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="slider-item mx-4">
+                        <div class="relative group overflow-hidden rounded-lg">
+                            <img class="w-full h-[300px] object-cover object-center" src="../images/s4.png"
+                                alt="Pony Tail">
+                            <div
+                                class="absolute inset-0 bg-[#687674] bg-opacity-50 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                                <span class="text-white text-lg font-bold">Pony Tail</span>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
+            <!-- img gallery 3 -->
+        </section>
+
+        <section class="mt-12">
             <div class="w-[90%] lg:w-[80%] mx-auto">
                 <h2 class="text-3xl sm:text-4xl font-bold mb-6 mt-6">Models- <span
                         class="text-customGold">Photography</span></h2>
@@ -467,6 +542,51 @@
                 }
             }, 3000);
         };
+    </script>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+
+    <script>
+        $(document).ready(function () {
+            const $slider = $('.slider');
+            $slider.slick({
+                slidesToShow: 4, // Show 4 images at a time
+                slidesToScroll: 1,
+                autoplay: true,
+                autoplaySpeed: 2000,
+                arrows: false, // Disable default arrows
+                dots: false,
+                responsive: [
+                    {
+                        breakpoint: 1280, // Tailwind's lg breakpoint (1280px)
+                        settings: {
+                            slidesToShow: 3, // Show 3 images for larger screens
+                        },
+                    },
+                    {
+                        breakpoint: 1024, // Tailwind's md breakpoint (1024px)
+                        settings: {
+                            slidesToShow: 2, // Show 2 images for medium screens
+                        },
+                    },
+                    {
+                        breakpoint: 640, // Tailwind's sm breakpoint (640px)
+                        settings: {
+                            slidesToShow: 1, // Show 1 image for small screens
+                        },
+                    },
+                ],
+            });
+
+            // Custom button actions
+            $('.custom-prev').on('click', function () {
+                $slider.slick('slickPrev');
+            });
+            $('.custom-next').on('click', function () {
+                $slider.slick('slickNext');
+            });
+        });
     </script>
 
 </body>
