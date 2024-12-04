@@ -146,7 +146,7 @@
             </div>
         </section>
 
-        <section class="mt-16 mb-16 relative">
+        <section class="mt-14 mb-14 relative">
             <h2 class="text-3xl sm:text-4xl text-center font-bold mb-8">
                 What
                 <span class="text-customGold">We Do.....</span>
@@ -243,7 +243,7 @@
             </div>
         </section>
 
-        <section class="relative mb-16">
+        <section class="relative mb-14">
             <div class="appointment-booking-bg-img-wrapper">
                 <div class="appointment-booking-bg-img"></div>
             </div>
@@ -298,46 +298,63 @@
             </div>
         </section>
 
-        <section class="mb-16 relative overflow-hidden">
+        <section class="pb-14 relative overflow-hidden">
             <div class="w-[90%] lg:w-[80%] mx-auto relative">
                 <h2 class="text-3xl sm:text-4xl text-center font-bold mb-8">
                     Stylish and <span class="text-customGold">Elegant Look</span>
                 </h2>
+                <div class="mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 hidden sm:block">
+                    <div class="flex justify-end items-center">
+                        <button
+                            class="custom-prev z-10 absolute right-16 sm:top-[6%] top-[29%] mb-6 transform bg-white text-[#273D32] rounded-full w-9 h-9 flex items-center justify-center shadow-md hover:bg-gray-600 transition duration-300">
+                            <img src="../images/slide-img-1.png" alt="slide-img-1">
+                        </button>
+                        <button
+                            class="custom-next z-10 absolute right-4 sm:top-[6%] top-[29%] mb-6 transform bg-white text-[#273D32] rounded-full w-9 h-9 flex items-center justify-center shadow-md hover:bg-gray-600 transition duration-300">
+                            <img src="../images/slide-img-2.png" alt="slide-img-2">
+                        </button>
+                    </div>
+                </div>
                 <div class="slider">
-                    <div class="slider-item mx-4">
+                    <div class="slider-item mx-2">
                         <img src="../images/b1.png" alt="b1"
                             class="w-full h-60 object-cover rounded-md shadow-lg object-top">
                     </div>
-                    <div class="slider-item mx-4">
+                    <div class="slider-item mx-2">
                         <img src="../images/b2.png" alt="b2"
                             class="w-full h-60 object-cover rounded-md shadow-lg object-top">
                     </div>
-                    <div class="slider-item mx-4">
+                    <div class="slider-item mx-2">
                         <img src="../images/b3.png" alt="b3"
                             class="w-full h-60 object-cover rounded-md shadow-lg object-top">
                     </div>
-                    <div class="slider-item mx-4">
+                    <div class="slider-item mx-2">
                         <img src="../images/b4.png" alt="b4"
                             class="w-full h-60 object-cover rounded-md shadow-lg object-top">
                     </div>
-                    <div class="slider-item mx-4">
+                    <div class="slider-item mx-2">
                         <img src="../images/s6.png" alt="b2"
                             class="w-full h-60 object-cover rounded-md shadow-lg object-top">
                     </div>
-                    <div class="slider-item mx-4">
+                    <div class="slider-item mx-2">
                         <img src="../images/s15.png" alt="b3"
                             class="w-full h-60 object-cover rounded-md shadow-lg object-top">
                     </div>
                 </div>
-                <!-- Custom Buttons -->
-                <button
-                    class="custom-prev absolute top-[60%] left-0 transform -translate-y-1/2 bg-gray-800 text-white rounded-full w-10 h-10 flex items-center justify-center shadow-md hover:bg-gray-600 transition duration-300">
-                    <i class="fa-solid fa-caret-left"></i>
-                </button>
-                <button
-                    class="custom-next absolute top-[60%] right-0 transform -translate-y-1/2 bg-gray-800 text-white rounded-full w-10 h-10 flex items-center justify-center shadow-md hover:bg-gray-600 transition duration-300">
-                    <i class="fa-solid fa-caret-right"></i>
-                </button>
+                <div
+                    class="absolute bottom-[-15%] left-1/2 transform -translate-x-1/2 flex justify-center space-x-4 z-20">
+                    <!-- Prev Button -->
+                    <button class="custom-prev bg-white text-[#273D32] rounded-full w-9 h-9 flex items-center justify-center shadow-md hover:bg-gray-600 transition duration-300 
+                        block sm:hidden"> <!-- Visible only on mobile -->
+                        <img src="../images/slide-img-1.png" alt="Prev Slide">
+                    </button>
+
+                    <!-- Next Button -->
+                    <button class="custom-next bg-white text-[#273D32] rounded-full w-9 h-9 flex items-center justify-center shadow-md hover:bg-gray-600 transition duration-300
+                        block sm:hidden"> <!-- Visible only on mobile -->
+                        <img src="../images/slide-img-2.png" alt="Next Slide">
+                    </button>
+                </div>
             </div>
             <div class="relative">
                 <img class="absolute 2xl:bottom-[-30px] 2xl:left-[93%] 2xl:w-[169px] 
@@ -347,7 +364,6 @@
                     style="transform: rotate(-40deg) scaleX(-1); z-index: 1;">
             </div>
         </section>
-
 
     </main>
 
