@@ -669,26 +669,33 @@
                     </div>
                 </div>
                 <div class="mt-6 md:mt-3">
-                    <div class="flex md:flex-row gap-6">
-                        <div class="w-full md:w-1/2">
-                            <h2 class="font-bold text-xl">Quick Links</h2>
-                            <ul class="space-y-2 text-lg ml-1">
+                    <div class="xl:block flex md:flex-row gap-6">
+                        <div class="xl:w-full xl:flex xl:mt-3  w-1/2">
+                            <h2 class="font-bold text-xl">Quick Links:</h2>
+                            <ul class="text-lg ml-1 xl:flex">
                                 <li><a href="./index.html" class="text-[#374B41] text-sm">Home page</a></li>
+                                <li class="text-[#374B41] xl:mx-1 hidden xl:block">|</li>
                                 <li><a href="./pages/Services.html" class="text-[#374B41] text-sm">Services</a></li>
+                                <li class="text-[#374B41] xl:mx-1 hidden xl:block">|</li>
                                 <li><a href="./pages/AboutUs.html" class="text-[#374B41] text-sm">About Us</a></li>
+                                <li class="text-[#374B41] xl:mx-1 hidden xl:block">|</li>
                                 <li><a href="./pages/Franchise.html" class="text-[#374B41] text-sm">Franchise</a></li>
+                                <li class="text-[#374B41] xl:mx-1 hidden xl:block">|</li>
                                 <li><a href="./pages/ContactUs.html" class="text-[#374B41] text-sm">Contact Us</a></li>
                             </ul>
                         </div>
-                        <div class="w-full md:w-1/2">
-                            <h2 class="font-bold text-xl">Gallery</h2>
-                            <ul class="text-lg ml-1">
-                                <li><a href="#" class="text-[#374B41] text-sm">Engagement</a></li>
-                                <li><a href="#" class="text-[#374B41] text-sm">Wedding</a></li>
-                                <li><a href="#" class="text-[#374B41] text-sm">Sangit</a></li>
-                                <li><a href="#" class="text-[#374B41] text-sm">Open - Hairstyle</a></li>
-                                <li><a href="#" class="text-[#374B41] text-sm">Braids</a></li>
-                                <li><a href="#" class="text-[#374B41] text-sm">Jewellery</a></li>
+                        <div class="xl:w-full xl:flex xl:mt-3 w-1/2">
+                            <h2 class="font-bold text-xl">Gallery:</h2>
+                            <ul class="text-lg ml-1 xl:flex">
+                                <li><a href="./index.html" class="text-[#374B41] text-sm">Home page</a></li>
+                                <li class="text-[#374B41] xl:mx-1 hidden xl:block">|</li>
+                                <li><a href="./pages/Services.html" class="text-[#374B41] text-sm">Services</a></li>
+                                <li class="text-[#374B41] xl:mx-1 hidden xl:block">|</li>
+                                <li><a href="./pages/AboutUs.html" class="text-[#374B41] text-sm">About Us</a></li>
+                                <li class="text-[#374B41] xl:mx-1 hidden xl:block">|</li>
+                                <li><a href="./pages/Franchise.html" class="text-[#374B41] text-sm">Franchise</a></li>
+                                <li class="text-[#374B41] xl:mx-1 hidden xl:block">|</li>
+                                <li><a href="./pages/ContactUs.html" class="text-[#374B41] text-sm">Contact Us</a></li>
                             </ul>
                         </div>
                     </div>
@@ -739,12 +746,12 @@
 
             if (isVisible) {
                 menu.classList.add('hidden');
-                icon.classList.remove('fa-times');  // Remove the 'close' icon
-                icon.classList.add('fa-bars-staggered');  // Add the 'bars' icon
+                icon.classList.remove('fa-times'); 
+                icon.classList.add('fa-bars-staggered');
             } else {
                 menu.classList.remove('hidden');
-                icon.classList.remove('fa-bars-staggered');  // Remove the 'bars' icon
-                icon.classList.add('fa-times');  // Add the 'close' icon
+                icon.classList.remove('fa-bars-staggered'); 
+                icon.classList.add('fa-times'); 
             }
         }
 
@@ -766,35 +773,33 @@
         $(document).ready(function () {
             const $slider = $('.slider');
             $slider.slick({
-                slidesToShow: 4, // Show 4 images at a time
+                slidesToShow: 4,
                 slidesToScroll: 1,
                 autoplay: true,
                 autoplaySpeed: 2000,
-                arrows: false, // Disable default arrows
+                arrows: false, 
                 dots: false,
                 responsive: [
                     {
-                        breakpoint: 1280, // Tailwind's lg breakpoint (1280px)
+                        breakpoint: 1280,
                         settings: {
-                            slidesToShow: 3, // Show 3 images for larger screens
+                            slidesToShow: 3, 
                         },
                     },
                     {
-                        breakpoint: 1024, // Tailwind's md breakpoint (1024px)
+                        breakpoint: 1024, 
                         settings: {
-                            slidesToShow: 2, // Show 2 images for medium screens
+                            slidesToShow: 2,
                         },
                     },
                     {
-                        breakpoint: 640, // Tailwind's sm breakpoint (640px)
+                        breakpoint: 640,
                         settings: {
-                            slidesToShow: 1, // Show 1 image for small screens
+                            slidesToShow: 1, 
                         },
                     },
                 ],
             });
-
-            // Custom button actions
             $('.custom-prev').on('click', function () {
                 $slider.slick('slickPrev');
             });
@@ -808,29 +813,29 @@
         $(document).ready(function () {
             const $slider0 = $('.slider0');
             $slider0.slick({
-                slidesToShow: 2, // Show 4 images at a time
+                slidesToShow: 2,
                 slidesToScroll: 1,
                 autoplay: true,
                 autoplaySpeed: 3000,
-                arrows: false, // Disable default arrows
+                arrows: false, 
                 dots: false,
                 responsive: [
                     {
-                        breakpoint: 1280, // Tailwind's lg breakpoint (1280px)
+                        breakpoint: 1280, 
                         settings: {
-                            slidesToShow: 2, // Show 3 images for larger screens
+                            slidesToShow: 2, 
                         },
                     },
                     {
-                        breakpoint: 1024, // Tailwind's md breakpoint (1024px)
+                        breakpoint: 1024, 
                         settings: {
-                            slidesToShow: 1, // Show 2 images for medium screens
+                            slidesToShow: 1, 
                         },
                     },
                     {
-                        breakpoint: 640, // Tailwind's sm breakpoint (640px)
+                        breakpoint: 640, 
                         settings: {
-                            slidesToShow: 1, // Show 1 image for small screens
+                            slidesToShow: 1, 
                         },
                     },
                 ],
