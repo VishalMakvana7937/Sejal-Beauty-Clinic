@@ -242,7 +242,7 @@
         <section class="mb-14 bg-[#E8DCBD] relative">
             <div class="flex flex-col md:flex-row w-[90%] lg:w-[80%] mx-auto gap-6 py-12">
                 <div class="w-full md:w-6/12 flex items-center lg:items-start  md:justify-start">
-                    <div class="w-full md:w-6/12 flex md:justify-start">
+                    <div class="w-full md:w-6/12 flex md:justify-start z-30">
                         <div class="w-[90%]">
                             <img class="w-full max-w-[340px] max-h-[401px] rounded-lg" src="../images/beauty-img-1.png"
                                 alt="beauty-img-1">
@@ -302,6 +302,15 @@
                                     lg:bottom-[-35px] lg:left-[-6%] lg:w-[144px] 
                                     h-auto opacity-20 hidden lg:block" src="../images/tree-1.png"
                     style="transform: rotate(60deg);" alt="tree-1">
+            </div>
+            <div class="relative z-20">
+                <img class="absolute 2xl:bottom-[30px] 2xl:left-[22%] 2xl:w-[155px] 
+                                    xl:bottom-[40px] xl:left-[20%] xl:w-[150px] 
+                                    lg:bottom-[100px] lg:left-[18%] lg:w-[135px] 
+                                    md:bottom-[60px] md:left-[14%] md:w-[120px] 
+                                    sm:bottom-[235px] sm:left-[36%] sm:w-[145px] 
+                                    bottom-[325px] left-[34%] w-[100px] 
+                h-auto" src="../images/Rectangle 25.png" alt="Rectangle 25">
             </div>
         </section>
 
@@ -450,12 +459,12 @@
 
             if (isVisible) {
                 menu.classList.add('hidden');
-                icon.classList.remove('fa-times');  // Remove the 'close' icon
-                icon.classList.add('fa-bars-staggered');  // Add the 'bars' icon
+                icon.classList.remove('fa-times'); 
+                icon.classList.add('fa-bars-staggered');  
             } else {
                 menu.classList.remove('hidden');
-                icon.classList.remove('fa-bars-staggered');  // Remove the 'bars' icon
-                icon.classList.add('fa-times');  // Add the 'close' icon
+                icon.classList.remove('fa-bars-staggered'); 
+                icon.classList.add('fa-times');  
             }
         }
 
@@ -465,7 +474,7 @@
                 if (loadingScreen) {
                     loadingScreen.style.display = 'none';
                 }
-            }, 3000);
+            }, );
         };
     </script>
 
