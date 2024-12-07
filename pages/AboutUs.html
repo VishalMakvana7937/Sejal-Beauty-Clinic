@@ -320,10 +320,13 @@
                 <span class="text-customGold px-2">Story</span>
             </h2>
             <div class="flex flex-col md:flex-row w-[90%] lg:w-[80%] mx-auto gap-6">
+                <!-- Image Section -->
                 <div class="w-full md:w-5/12 flex md:justify-start">
                     <img class="w-full max-w-[624px] max-h-[574px] rounded-lg" src="../images/fasion-img-13.png"
                         alt="fasion-img-13">
                 </div>
+
+                <!-- Text Section -->
                 <div class="w-full md:w-7/12 flex items-center md:justify-start">
                     <div class="text-start w-full 2xl:w-[85%]">
                         <p class="mt-1 text-sm text-[#717171]">
@@ -338,47 +341,65 @@
                         <p class="mt-1 text-sm text-[#717171]">
                             Sejal Savaliya started this business with her two younger sisters in Ahmedabad in 1997 and
                             since then they have not looked back.
-                        </p>rge">
-                        <p class="mt-1 text-sm text-[#717171]">
-                            At Flock, we believe in embracing your natural beauty. Sejal Savaliya and Parul Koladiya
-                            have a deep passion for the art of beauty and their love for their craft is unparalleled.
-                            Their expertise and impeccable skills allow them to create one-of-a-kind designer makeup and
-                            hair makeovers. Quality has always been Sejal Savaliya’s top priority, placing it above
-                            quantity.
                         </p>
-                        <p class="mt-1 text-sm text-[#717171]">
-                            Together with their creative and confident team of makeup artists and hairstylists, Sejal
-                            Savaliya and Parul Koladiya have conceptualized numerous innovative looks, earning them
-                            unmatched reputation and goodwill.
-                        </p>
-                        <p class="mt-1 text-sm text-[#717171]">
-                            Every year, they learn, innovate and implement new techniques and ideas on their clients.
-                            They continuously create new jewelry, hair accessories, and styles that cater to different
-                            religions, occasions, and corporate looks.
-                        </p>
+
+                        <!-- All Content for Larger Screens -->
+                        <div class="hidden md:block" id="extraContentLarge">
+                            <p class="mt-1 text-sm text-[#717171]">
+                                At Flock, we believe in embracing your natural beauty. Sejal Savaliya and Parul Koladiya
+                                have a deep passion for the art of beauty and their love for their craft is
+                                unparalleled.
+                                Their expertise and impeccable skills allow them to create one-of-a-kind designer makeup
+                                and
+                                hair makeovers. Quality has always been Sejal Savaliya’s top priority, placing it above
+                                quantity.
+                            </p>
+                            <p class="mt-1 text-sm text-[#717171]">
+                                Together with their creative and confident team of makeup artists and hairstylists,
+                                Sejal
+                                Savaliya and Parul Koladiya have conceptualized numerous innovative looks, earning them
+                                unmatched reputation and goodwill.
+                            </p>
+                            <p class="mt-1 text-sm text-[#717171]">
+                                Every year, they learn, innovate and implement new techniques and ideas on their
+                                clients.
+                                They continuously create new jewelry, hair accessories, and styles that cater to
+                                different
+                                religions, occasions, and corporate looks.
+                            </p>
+                        </div>
+
+                        <!-- Read More Content (only for small screens) -->
+                        <div class="hidden sm:block" id="extraContentSmall" style="display:none;">
+                            <p class="mt-1 text-sm text-[#717171]">
+                                At Flock, we believe in embracing your natural beauty. Sejal Savaliya and Parul Koladiya
+                                have a deep passion for the art of beauty and their love for their craft is
+                                unparalleled.
+                                Their expertise and impeccable skills allow them to create one-of-a-kind designer makeup
+                                and
+                                hair makeovers. Quality has always been Sejal Savaliya’s top priority, placing it above
+                                quantity.
+                            </p>
+                            <p class="mt-1 text-sm text-[#717171]">
+                                Together with their creative and confident team of makeup artists and hairstylists,
+                                Sejal
+                                Savaliya and Parul Koladiya have conceptualized numerous innovative looks, earning them
+                                unmatched reputation and goodwill.
+                            </p>
+                            <p class="mt-1 text-sm text-[#717171]">
+                                Every year, they learn, innovate and implement new techniques and ideas on their
+                                clients.
+                                They continuously create new jewelry, hair accessories, and styles that cater to
+                                different
+                                religions, occasions, and corporate looks.
+                            </p>
+                        </div>
+
+                        <!-- Read More Button (only visible on small screens) -->
+                        <button class="sm:hidden mt-3 text-customGold hover:underline" id="readMoreBtn">Read
+                            More</button>
                     </div>
-                    <div class="hidden sm:block" id="extraContentSmall" style="display:none;">
-                        <p class="mt-1 text-sm text-[#717171]">
-                            At Flock, we believe in embracing your natural beauty. Sejal Savaliya and Parul Koladiya
-                            have a deep passion for the art of beauty and their love for their craft is unparalleled.
-                            Their expertise and impeccable skills allow them to create one-of-a-kind designer makeup and
-                            hair makeovers. Quality has always been Sejal Savaliya’s top priority, placing it above
-                            quantity.
-                        </p>
-                        <p class="mt-1 text-sm text-[#717171]">
-                            Together with their creative and confident team of makeup artists and hairstylists, Sejal
-                            Savaliya and Parul Koladiya have conceptualized numerous innovative looks, earning them
-                            unmatched reputation and goodwill.
-                        </p>
-                        <p class="mt-1 text-sm text-[#717171]">
-                            Every year, they learn, innovate and implement new techniques and ideas on their clients.
-                            They continuously create new jewelry, hair accessories, and styles that cater to different
-                            religions, occasions, and corporate looks.
-                        </p>
-                    </div>
-                    <button class="sm:hidden mt-3 text-customGold hover:underline" id="readMoreBtn">Read More</button>
                 </div>
-            </div>
             </div>
         </section>
 
