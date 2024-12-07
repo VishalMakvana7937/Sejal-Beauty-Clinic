@@ -250,29 +250,23 @@
 
         <section class="pt-14 pb-[210px] sm:pb-24 md:pb-14 bg-[#E9DCBD] mb-12 h-auto">
             <div class="flex flex-col flex-col-reverse md:flex-row w-[90%] lg:w-[80%] mx-auto gap-6 relative">
-                <!-- Video Container -->
-                <div class="w-full md:w-3/4 flex items-center justify-center md:justify-start relative">
-                    <!-- Video Thumbnail -->
-                    <img class="rounded w-full xl:h-[493px] lg:h-[425px] md:h-[353px] h-auto object-center object-cover cursor-pointer"
-                        src="./images/fasion-img-5.png" alt="fashion-img-5" id="videoThumbnail">
-                    <!-- Video Element (Hidden by Default) -->
-                    <video
-                        class="hidden rounded w-full xl:h-[493px] lg:h-[425px] md:h-[353px] h-auto object-center object-cover"
-                        id="videoPlayer" controls>
-                        <source src="./images/beauty-video.mp4" type="video/mp4">
-                        Your browser does not support the video tag.
-                    </video>
+                <div class="w-full md:w-3/4 flex items-center justify-center md:justify-start">
+                    <img class="rounded w-full xl:h-[493px] lg:h-[425px] md:h-[353px] h-auto
+                    
+                    
+                    object-center object-cover" src="./images/fasion-img-5.png" alt="fasion-img-5">
                 </div>
-
-                <!-- Text Content -->
                 <div
-                    class="w-full 2xl:top-[18%] 2xl:left-[65%]
-                xl:top-[16%] xl:left-[65%]
-                lg:top-[14%] lg:left-[58%]
-                md:top-[8%] md:left-[35%]
-                sm:top-[30%] sm:left-[0%]
-                top-[30%] left-[0%]
-                2xl:w-2/6 xl:w-2/5 lg:w-3/6 md:w-2/3 flex items-center justify-center md:justify-start bg-[#273D32] rounded-tr-[105px] transform transition-all absolute">
+                    class="w-full 2xl:top-[18%] 2xl:left-[65%] 
+                                    xl:top-[16%] xl:left-[65%]
+                                    lg:top-[14%] lg:left-[58%]
+                                    md:top-[8%] md:left-[35%]
+                                    sm:top-[30%] sm:left-[0%]
+
+                                    top-[30%] left-[0%]
+
+
+                                    2xl:w-2/6 xl:w-2/5 lg:w-3/6 md:w-2/3 flex items-center justify-center md:justify-start bg-[#273D32] rounded-tr-[105px] transform transition-all absolute">
 
                     <div class="px-6 py-8">
                         <h2 class="text-lg text-center font-semibold text-white">
@@ -296,20 +290,6 @@
                 </div>
             </div>
         </section>
-        <div id="videoModal" class="fixed inset-0 bg-black bg-opacity-70 hidden z-50 justify-center items-center flex">
-            <div class="relative w-full h-full md:w-3/4 md:h-3/4 xl:w-2/3 xl:h-2/3">
-                <!-- Close Button -->
-                <button id="closeModal"
-                    class="absolute top-4 right-4 text-white text-3xl bg-transparent border-none cursor-pointer z-10">
-                    &times;
-                </button>
-                <!-- Video Player -->
-                <video id="modalVideoPlayer" class="w-full h-full object-cover rounded" controls>
-                    <source src="./images/beauty-video.mp4" type="video/mp4">
-                    Your browser does not support the video tag.
-                </video>
-            </div>
-        </div>
 
         <section class="mb-14 relative overflow-hidden">
             <div class="w-[90%] lg:w-[80%] mx-auto">
@@ -791,35 +771,6 @@
                 }
             }, 3000);
         };
-    </script>
-
-    <script>
-        const thumbnail = document.getElementById('videoThumbnail');
-        const videoModal = document.getElementById('videoModal');
-        const modalVideo = document.getElementById('modalVideoPlayer');
-        const closeModalButton = document.getElementById('closeModal');
-
-        // Open the video in modal
-        thumbnail.addEventListener('click', () => {
-            videoModal.classList.remove('hidden'); // Show modal
-            modalVideo.play(); // Play video in modal
-        });
-
-        // Close the modal
-        closeModalButton.addEventListener('click', () => {
-            videoModal.classList.add('hidden'); // Hide modal
-            modalVideo.pause(); // Pause the video
-            modalVideo.currentTime = 0; // Reset video to the beginning
-        });
-
-        // Optionally, close the modal if clicked outside the video
-        videoModal.addEventListener('click', (e) => {
-            if (e.target === videoModal) {
-                videoModal.classList.add('hidden'); // Hide modal
-                modalVideo.pause(); // Pause the video
-                modalVideo.currentTime = 0; // Reset video to the beginning
-            }
-        });
     </script>
 
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>

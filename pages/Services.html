@@ -465,15 +465,14 @@
 
             if (isVisible) {
                 menu.classList.add('hidden');
-                icon.classList.remove('fa-times');  // Remove the 'close' icon
-                icon.classList.add('fa-bars-staggered');  // Add the 'bars' icon
+                icon.classList.remove('fa-times'); 
+                icon.classList.add('fa-bars-staggered');
             } else {
                 menu.classList.remove('hidden');
-                icon.classList.remove('fa-bars-staggered');  // Remove the 'bars' icon
-                icon.classList.add('fa-times');  // Add the 'close' icon
+                icon.classList.remove('fa-bars-staggered'); 
+                icon.classList.add('fa-times'); 
             }
         }
-
         window.onload = function () {
             setTimeout(function () {
                 const loadingScreen = document.getElementById('loadingScreen');
@@ -491,29 +490,29 @@
         $(document).ready(function () {
             const $slider = $('.slider');
             $slider.slick({
-                slidesToShow: 4, // Show 4 images at a time
+                slidesToShow: 4, 
                 slidesToScroll: 1,
                 autoplay: true,
                 autoplaySpeed: 2000,
-                arrows: false, // Disable default arrows
+                arrows: false, 
                 dots: false,
                 responsive: [
                     {
-                        breakpoint: 1280, // Tailwind's lg breakpoint (1280px)
+                        breakpoint: 1280, 
                         settings: {
-                            slidesToShow: 3, // Show 3 images for larger screens
+                            slidesToShow: 3, 
                         },
                     },
                     {
-                        breakpoint: 1024, // Tailwind's md breakpoint (1024px)
+                        breakpoint: 1024, 
                         settings: {
-                            slidesToShow: 2, // Show 2 images for medium screens
+                            slidesToShow: 2, 
                         },
                     },
                     {
-                        breakpoint: 640, // Tailwind's sm breakpoint (640px)
+                        breakpoint: 640, 
                         settings: {
-                            slidesToShow: 1, // Show 1 image for small screens
+                            slidesToShow: 1,
                         },
                     },
                 ],
